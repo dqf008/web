@@ -1,0 +1,40 @@
+.el-select-dropdown__list {
+    /*padding: 3px 0;*/
+}
+
+.el-select-dropdown__item {
+    /*font-size: 12px;
+    height: 22px;
+    padding: 3px 10px;*/
+}
+.el-input__inner,.el-button{
+    /*border-radius:0 !important;*/
+}
+.el-popper[x-placement^=bottom]{
+    margin-top:0;
+}
+.el-popper[x-placement^=bottom] .popper__arrow{
+    display: none !important;
+}
+.el-button--mini {
+    padding: 4px 10px;
+}
+
+.el-form-item {
+    margin-bottom: 0px;
+}
+.el-table {
+    font-size:12px;
+    color:#225D9C;
+}
+.el-table .cell{
+    padding-left:5px;
+    padding-right:5px;
+    line-height:14px;
+}
+.el-table td, .el-table th{
+    height:35px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+body{padding:8px;margin:0;}

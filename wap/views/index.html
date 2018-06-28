@@ -1,0 +1,157 @@
+<ion-view class="m-index" view-title="">
+  	<ion-nav-buttons side="left">
+    	<a class="logo" href="#/home"><img ng-src="{{appConfig.logoUrl}}"></a>
+  	</ion-nav-buttons>
+  	
+	<ion-nav-buttons side="right">
+    	<span ng-if="isLogin">
+	  		<a class="user-button" href="#/ucenter/index"><span class="span-user">{{My.getUserName()}}<span ng-if="My.userMsg>0" class="notify"></span></span></a>
+    		<a class="button ry-button" ng-click="logout();">退出</a>
+    		<!-- <a class="button ry-button" ng-click="showTestModal();">调试</a> -->
+  		</span>
+  		
+  		<span ng-if="inited && !isLogin">
+  			<a class="button ry-button mr-5" href="#/login">登录</a>
+  			<a class="button ry-button mr-5" href="#/reg">注册</a>
+  			<!--<a class="button ry-button" ng-click="guestLogin();">试玩</a>-->
+  		</span>
+  		<ion-spinner ng-show="!inited" class="spinner topinfo-spinner"></ion-spinner>
+  		
+  	</ion-nav-buttons>
+	  	
+  	<ion-content>
+	   	<ion-slide-box delegate-handle="home-handle" auto-play="true" does-continue="true" slide-interval="3000">
+		    <ion-slide ng-repeat="url in appConfig.slides"><img ng-src="{{url}}" /></ion-slide>
+		</ion-slide-box>
+		
+		<div class="row notice">
+			<div class="col col-10 notice-icon"></div>
+			<div class="col col-90 notice-content">
+				<zl-notice></zl-notice>
+			</div>
+		</div>
+		
+		<div class="gamelist">
+			<div class="title"><img src="./images/icon-game.png">热门游戏</div>
+			<div class="row">
+				<div class="col col-33">
+					<div class="gamebox">
+						<a href="#/lottery/index/pk10">
+							<img src="./images/g-bjpk10.png">
+							<p>北京赛车</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a href="#/lottery/index/xyft">
+							<img src="./images/g-xyft.png">
+							<p>幸运飞艇</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a href="#/lottery/index/cqssc">
+							<img src="./images/g-ssc.png">
+							<p>重庆时时彩</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a href="#/lottery/index/gdkl10">
+							<img src="./images/g-klsf.png">
+							<p>快乐十分</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a href="#/lottery/index/marksix">
+							<img src="./images/g-hkc.png">
+							<p>香港六合彩</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a href="#/lottery/list">
+							<img src="./images/g-hfc.png">
+							<p>更多彩票</p>
+						</a> 
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a href="sports">
+							<img src="./images/g-sports.png">
+							<p>皇冠体育</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a target="_blank" ng-href="{{appConfig.serviceUrl}}">
+							<img src="./images/menu-service.png">
+							<p>在线客服</p>
+						</a>
+					</div>
+				</div><div class="col col-33">
+					<div class="gamebox">
+						<a target="_blank" ng-href="{{pcUrl}}?machinetype=pc">
+							<img src="./images/g-computer.png">
+							<p>电脑版</p>
+						</a>
+					</div>
+				</div><div class="col col-33 ng-hide">
+					<div ng-if="!isLogin" class="gamebox">
+						<a ng-click="guestLogin();">
+							<img src="./images/g-try.png">
+							<p>免费试玩</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 热门游戏 END -->
+		
+		<!-- 优惠活动 BEGIN -->
+		<div class="activity" ng-if="activityData.length">
+			<div class="head">
+				<div class="title"><img src="./images/icon-activity.png">优惠活动</div>
+				<a href="#/activity/index">更多&gt;&gt;</a>
+			</div>
+			
+			<div class="activity-list">
+				<a ng-href="#/activity/detail/{{item.id}}" ng-repeat="item in activityData"><p>{{item.title}}</p><img ng-src="{{item.img}}"></a>
+			</div>
+		</div>
+		<!-- 优惠活动 END -->
+		
+		<div class="copyright">
+			<a class="computer" target="_blank" ng-href="{{pcUrl}}?machinetype=pc">电脑版</a>
+			<p ng-bind-html="appConfig.copyright"></p>
+		</div>
+  	</ion-content>
+  	
+	<ion-footer-bar class="max">
+		<ion-tabs class="tabs-icon-top tabs-light hide">
+			<ion-tab title="网站首页" icon-off="icon-home" icon-on="icon-home" href="#/home"></ion-tab>
+			<ion-tab title="彩票游戏" icon-off="icon-youxi" icon-on="icon-youxi" href="#/lottery/list"></ion-tab>
+			<ion-tab title="优惠活动" icon-off="icon-29" icon-on="icon-29" href="#/activity/index"></ion-tab>
+			<!-- <ion-tab title="资金管理" icon-off="icon-29" icon-on="icon-29" href="#/bank/deposit"></ion-tab> -->
+			<ion-tab title="个人中心" icon-off="icon-yonghu" icon-on="icon-yonghu" href="#/ucenter/index"></ion-tab>
+		</ion-tabs>
+		<div class="tabs" style="padding-top:5px">
+			<a href="#/bank/money" class="tab-item"><img src="images/icon-coin.png" /><span>资金管理</span></a>
+			<a href="#/report/index" class="tab-item"><img src="images/icon-record.png" /><span>投注记录</span></a>
+			<a ng-href="{{appConfig.serviceUrl}}" target="_blank" class="tab-item"><img src="images/icon-service.png" /><span>在线客服</span></a>
+			<a href="#/ucenter/transfer" class="tab-item"><img src="images/icon-transfer.png" /><span>额度转换</span></a>
+			<a href="#/activity/index" class="tab-item"><img src="images/icon-gift.png" /><span>优惠活动</span></a>
+		</div>
+	</ion-footer-bar>
+	<div ng-if="addHome" class="add-home">
+		<div class="add-home-content">
+			<img ng-src="{{desktopIcon}}" />
+			<p>先点击<i class="icon ion-ios-upload-outline"></i></p>
+			<p>再“添加到主屏幕”</p>
+			<i ng-click="closeAddHome()" class="icon ion-close-round"></i>
+			<em></em>
+		</div>
+	</div>
+</ion-view>

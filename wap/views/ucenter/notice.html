@@ -1,0 +1,70 @@
+<ion-view view-title="信息中心">
+	<ion-nav-buttons side="left">
+		<a class="button button-icon icon-prepage" ng-click="back();"></a>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<a ng-if="type==2" class="button button-icon icon ion-trash-b" ng-click="deleteSMS()"></a> 
+		<a ng-if="type==2" class="button button-icon icon ion-android-add ng-hide" href="#/noticeadd"></a>
+	</ion-nav-buttons>
+	<ion-content class="m-message" scroll="false">
+		<cur-tabs class="tab-label" on-change="onChange(index)" tab-index="{{type}}">
+			<cur-tab tabscale="col col-33" title="网站公告">
+				<ion-content class="message-list has-top-tabs">
+					<ion-refresher on-refresh="noticeRefresh()"></ion-refresher>
+					<div ng-if="noticeList[type]">
+						<ion-list class="list">
+							<div class="item" ng-repeat="item in noticeList[type]" ng-click="showDetail($index)">
+								<h3>
+									<i ng-show="!item.read" class="icon ion-record"></i>
+									<span>{{item.content}}</span>
+								</h3>
+								<p>{{item.addTime}}</p>
+							</div>
+						</ion-list>
+						<div ng-if="noticeList[type].length==0" class="empty-tip">暂无数据</div>
+					</div>
+					<div ng-if="loadingMore[type]==undefined||(noticeList[type]&&loadingMore[type])" class="spinner-warp"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+					<ion-infinite-scroll ng-if="canLoadMore[type]" distance="1%" class="text-center" icon="ion-chevron-down" immediate-check="false" on-infinite="loadMore()"></ion-infinite-scroll>
+				</ion-content>
+			</cur-tab>
+			<cur-tab tabscale="col col-33" title="体育公告">
+				<ion-content class="message-list has-top-tabs">
+					<ion-refresher on-refresh="noticeRefresh()"></ion-refresher>
+					<div ng-if="noticeList[type]">
+						<ion-list class="list">
+							<div class="item" ng-repeat="item in noticeList[type]" ng-click="showDetail($index)">
+								<h3>
+									<i ng-show="!item.read" class="icon ion-record"></i>
+									<span>{{item.content}}</span>
+								</h3>
+								<p>{{item.addTime}}</p>
+							</div>
+						</ion-list>
+						<div ng-if="noticeList[type].length==0" class="empty-tip">暂无数据</div>
+					</div>
+					<div ng-if="loadingMore[type]==undefined||(noticeList[type]&&loadingMore[type])" class="spinner-warp"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+					<ion-infinite-scroll ng-if="canLoadMore[type]" distance="1%" class="text-center" icon="ion-chevron-down" immediate-check="false" on-infinite="loadMore()"></ion-infinite-scroll>
+				</ion-content>
+			</cur-tab>
+			<cur-tab tabscale="col col-33" title="站内消息{{My.userMsg>0?' ('+My.userMsg+')':''}}">
+				<ion-content class="message-list has-top-tabs">
+					<ion-refresher on-refresh="noticeRefresh()"></ion-refresher>
+					<div ng-if="noticeList[type]">
+						<ion-list class="list">
+							<div class="item" ng-repeat="item in noticeList[type]" ng-click="showSMSDetail($index)">
+								<h3>
+									<i ng-show="!item.read" class="icon ion-record"></i>
+									<span>{{item.title}}</span>
+								</h3>
+								<p>{{item.addTime}}</p>
+							</div>
+						</ion-list>
+						<div ng-if="noticeList[type].length==0" class="empty-tip">暂无数据</div>
+					</div>
+					<div ng-if="loadingMore[type]==undefined||(noticeList[type]&&loadingMore[type])" class="spinner-warp"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+					<ion-infinite-scroll ng-if="canLoadMore[type]" distance="1%" class="text-center" icon="ion-chevron-down" immediate-check="false" on-infinite="loadMore()"></ion-infinite-scroll>
+				</ion-content>
+			</cur-tab>
+		</cur-tabs>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,94 @@
+*{font-family: 'Microsoft Yahei', '微软雅黑';}
+html,body{margin:0;padding: 0;}
+body{background:#282828;overflow: hidden;}
+.top{    
+    background: #282828 url(bk3.png);
+    border-bottom: 1px solid #000;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: 50%;
+    background-position: right -80px;
+}
+.top h2 {
+    margin: 0;
+    line-height: 50px;
+    color: #e9d87b;
+    font-size: 20px;
+    padding-left: 50px;
+    background: url(notice.png) no-repeat 15px center;
+    font-family: '黑体';
+    font-weight: normal;
+    text-shadow: 1px 1px #000000;
+}
+.top h2 span{border-right:1px solid #e9d87b;padding-right:10px;font-family: '黑体';}
+.top h2 em{margin-left:10px;font-style:normal;font-size: 13px;font-family:'Segoe UI', Helvetica, Arial, sans-serif;}
+.content{
+    background: url(noteline.png) 60px center repeat-y;
+    margin-top: 51px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow-y: auto;
+    border-top: 1px solid #333;
+}
+.warp{padding: 10px;}
+.note {
+    min-height: 60px;
+    padding: 10px 0 10px 60px;
+    cursor: pointer;
+    position:relative;
+}
+.note .note-title {
+    font-size: 14px;
+    color: #e9d87b;
+    line-height: 12px;
+    margin-bottom: 10px;
+    font-family: Helvetica,arial;
+    text-shadow: 1px 1px #000000;
+}
+.note .notes{
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #4a4a4a;
+    /*background: #3c3c3c;
+    padding: 15px;
+    border: 1px solid #4a4a4a;*/
+}
+.note p{margin:0;color:#999;line-height:20px;/*text-indent: 24px;*/font-family: simsun; font-size: 12px;text-shadow: 1px 1px #000000;}
+.ellipse {
+    background: url(ellipse.png);
+    width: 11px;
+    height: 11px;
+    float: left;
+    margin: 0 20px 0 0;
+    float: left;
+}
+.note-details {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 20px;
+    padding-left: 32px;
+}
+.date {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background: #d0b957 url(bk4.png) no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.date span {
+    font-size: 18px;
+    display: block;
+    line-height: 28px;
+}
+.date b {
+    padding-top: 3px;
+    font-family: Arial;
+    font-weight: 400;
+    border-top: 1px solid #fafafa;
+}

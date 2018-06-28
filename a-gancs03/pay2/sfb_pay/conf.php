@@ -1,0 +1,1 @@
+<?php return;?>{"mid":"10002","key":"t4ig5acnpx4fet4zapshjacjd9o4bhbi","url":"182.16.12.114","closeList":["wechat_wap","alipay_wap","bank_wap"]}

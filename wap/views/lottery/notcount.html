@@ -1,0 +1,44 @@
+<ion-view class="lottery-notcount" view-title="即时注单">
+    <ion-nav-buttons side="left"><a class="button button-icon icon-prepage" ng-click="back()"></a></ion-nav-buttons>
+    <ion-content class="has-header" scroll="false">
+        <div class="table-list table-list-detail">
+            <div class="row table-head">
+                <div class="col col-split">投注单号<br />投注期号</div>
+                <div class="col col-split">投注时间<br />（美东）</div>
+                <div class="col col-split">投注金额<br />可赢金额</div>
+            </div>
+            <ion-content class="table-body table-body-nav">
+                <ion-refresher ng-if="ansycLoaded" on-refresh="refresh()"></ion-refresher>
+                <div ng-if="!ansycLoaded" class="padding text-center"><ion-spinner></ion-spinner></div>
+                <div ng-if="ansycLoaded&&!isRefresh" class="table-body">
+                    <div class="row" ng-repeat="item in betListData" ng-click="showDetail($index)">
+                        <div class="col">{{item.id|short:10:'***'}}<br />{{item.expect}}</div>
+                        <div class="col">{{item.date}}<br />{{item.time}}</div>
+                        <div class="col">{{item.betMoney|money}}<br />{{(item.odds*item.betMoney)|money}}</div>
+                    </div>
+                    <div ng-if="betListData.length==0" class="empty-tip">暂无数据</div>
+                </div>
+                <div ng-if="ansycLoaded&&loadMore" class="spinner-warp"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+                <ion-infinite-scroll ng-if="ansycLoaded&&loadMore&&!isLoading" distance="1%" class="text-center" icon="ion-chevron-down" immediate-check="true" on-infinite="load()"></ion-infinite-scroll>
+            </ion-content>
+            <ion-footer-bar>
+                <div class="row table-footer">
+                    <div ng-if="!ansycLoaded||isRefresh" class="col"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+                    <div ng-if="ansycLoaded&&!isRefresh" class="col col-33"><div class="button button-clear">合计</div></div>
+                    <div ng-if="ansycLoaded&&!isRefresh" class="col col-33"><div class="button button-clear">{{allData.totalBetNums}}</div></div>
+                    <div ng-if="ansycLoaded&&!isRefresh" class="col col-33"><div class="button bg-default">{{allData.winLoseMoney|money}}</div></div>
+                </div>
+            </ion-footer-bar>
+        </div>
+    </ion-content>
+    <script id="detail-template" type="text/ng-template">
+        <div class="row"><div class="col">投注单号：{{detail.id}}</div></div>
+        <div class="row"><div class="col">投注期号：第 {{detail.expect}} 期</div></div>
+        <div class="row"><div class="col">投注金额：{{detail.betMoney|money}}</div></div>
+        <div class="row" ng-if="detail.status!=0"><div class="col">派彩金额：{{detail.winLoseMoney|money}}</div></div>
+        <div class="row" ng-if="detail.status==0"><div class="col">可赢金额：{{(detail.odds*detail.betMoney)|money}}</div></div>
+        <div class="row"><div class="col">投注详情：<br />{{detail.betContent[0]}}【<font color="#FF0000">{{detail.betContent[1]}}</font>】 @ {{detail.odds}}</div></div>
+        <div class="row"><div class="col">投注时间：<br />{{detail.mdTime}} (美东)<br />{{detail.bjTime}} (北京)</div></div>
+    </script>
+</ion-view>
+    

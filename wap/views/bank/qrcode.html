@@ -1,0 +1,71 @@
+<ion-view view-title="二维码转账">
+	<ion-nav-buttons side="left"><a class="button button-icon icon-prepage" ng-click="back();"></a></ion-nav-buttons>
+	<ion-content>
+		<div class="item-online item-bank">
+			<!-- 第一步，用户选择 -->
+			<div ng-if="bankStep==1">
+				<div class="offline-pay-tip"><span>!</span>请先转账成功后再点下一步提交转账信息</div>
+				<div class="row">
+					<div class="col" style="max-width:100%">
+						<label class="item item-select">
+							<select ng-model="transferData.info" ng-options="val.name+'（'+val.nickName+'：'+val.id+'）' for val in appData">
+								<option value="">选择账号</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div ng-if="transferData.info" class="item-round">
+					<p>支付名称：{{transferData.info.name}} <a class="clip-board" data-clipboard-text="{{transferData.info.name}}">(复制)</a></p>
+					<p>收款账号：{{transferData.info.id}} <a class="clip-board" data-clipboard-text="{{transferData.info.id}}">(复制)</a></p>
+					<p>账号昵称：{{transferData.info.nickName}} <a class="clip-board" data-clipboard-text="{{transferData.info.nickName}}">(复制)</a></p>
+					<p><img ng-src="{{transferData.info.img}}" class="max-width-100"></p>
+				</div>
+				<button ng-click="checkStep()" ng-disabled="!transferData.info" class="button button-block button-positive button-positive-theme">下一步</button>
+			</div>
+
+			<!-- 第二步，填写转账信息 -->
+			<div ng-if="bankStep==2">
+				<div class="confirmbox-theme">
+					<div class="confirm-title"><span>!</span>请先转账到以下账号，再填写转账金额</div>
+					<div class="confirm-con">
+						<div class="confirm-contitle">{{transferData.info.name}} <a class="clip-board" data-clipboard-text="{{transferData.info.name}}">(复制)</a></div>
+						<div class="confirm-context">
+							<p>收款账号：{{transferData.info.id}} <a class="clip-board" data-clipboard-text="{{transferData.info.id}}">(复制)</a></p>
+							<p>账号昵称：{{transferData.info.nickName}} <a class="clip-board" data-clipboard-text="{{transferData.info.nickName}}">(复制)</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item item-input"><input type="text" class="input-number reset-field" ng-model="transferData.money" placeholder="请填写转账金额" maxlength="10" /></div>
+				<div class="item item-input"><input type="text" class="input-number reset-field" ng-model="transferData.username" placeholder="请填写转账人昵称、姓名或ID" maxlength="20" /></div>
+				<div class="list item item-input" ng-click="openDatePicker()"><span>{{transferData.time}}</span></div>
+				<button ng-click="checkStep()" ng-disabled="!transferData.money||!transferData.username||!transferData.time" class="button button-block button-positive button-positive-theme">下一步</button>
+			</div>
+
+			<!-- 第三步，确认提交内容 -->
+			<div ng-if="bankStep==3">
+				<div class="confirmbox-theme">
+					<div class="confirm-title"><span>!</span>为了加快确认速度，请转账成功后再提交资料</div>
+					<div class="confirm-con">
+						<div class="confirm-contitle">转账信息</div>
+						<div class="confirm-context">
+							<p>转账金额：{{transferData.money}}</p>
+							<p>账号信息：{{transferData.username}}</p>
+							<p>转账时间：{{transferData.time}}</p>
+						</div>
+						<div class="confirm-contitle">收款信息</div>
+						<div class="confirm-context">
+							<p>支付名称：{{transferData.info.name}}</p>
+							<p>收款账号：{{transferData.info.id}}</p>
+							<p>账号昵称：{{transferData.info.nickName}}</p>
+						</div>
+					</div>
+				</div>
+				<button ng-click="checkStep()" class="button button-block button-positive button-positive-theme">提交申请</button>
+			</div>
+			<p class="item-warn text-light red">温馨提示</p>
+			<p class="item-warn text-light">1.二维码转账单笔最低<span class="red">{{min|money}}</span>元，最高<span class="red">{{max|money}}</span>元；</p>
+			<p class="item-warn text-light">2.为了加快确认速度，建议转入<span class="red">非整数</span>金额（如：1000.32元，500.77元）；</p>
+			<p class="item-warn text-light">3.系统将按照实际转账金额进行返利。</p>
+		</div>
+	</ion-content>
+</ion-view>

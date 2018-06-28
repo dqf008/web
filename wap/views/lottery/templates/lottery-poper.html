@@ -1,0 +1,22 @@
+<ion-popover-view class="my-popover">
+	<div class="list">
+		<a class="item" href="#/lottery/notcount/{{gameId}}" ng-if="isLogin">
+			<div>即时注单</div>
+			<div ng-show="!countMoneyState"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+			<div ng-show="countMoneyState" class="color-orange">{{unbalancedMoney|money}}</div>
+		</a>		
+		<a class="item ng-hide" href="#/lottery/settled/{{gameId}}" ng-if="isLogin">今日已结</a>
+		<a class="item" href="#/report/index?type=Lottery" ng-if="isLogin">投注记录</a>
+		<a class="item" href="#/lottery/history/{{gameId}}">开奖结果</a>
+		<a class="item" ng-click="showRole()">游戏规则</a>
+		<a class="item" href="#/lottery/changLong/{{gameId}}" ng-show="curGame.hasChangLong">两面长龙</a>
+		<a class="item" href="#/lottery/luZhu/{{gameId}}" ng-show="curGame.hasLuZhu">路珠</a>
+		<a ng-if="!isTestAccount&&isLogin" class="item" href="#/bank/money?type=deposit">充值</a>
+		<a ng-if="!isTestAccount&&isLogin" class="item" href="#/bank/money?type=withdraw">提现</a>
+		<a class="item color-br-gray" ng-click="popover.hide()" ng-if="isLogin">
+			<div class="color-blue">{{!curGame.isPrevious?'今日输赢':'上期输赢'}}</div>
+			<div ng-show="!countMoneyState"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+			<div ng-show="countMoneyState" class="color-orange">{{totalTotalMoney|money}}</div>
+		</a>
+	</div>
+</ion-popover-view>

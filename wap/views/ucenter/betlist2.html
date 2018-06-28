@@ -1,0 +1,24 @@
+<ion-view class="m-report" cache-view="false" view-title="投注记录">
+    <ion-nav-buttons side="left"><a class="button button-icon icon ion-ios-arrow-back" ng-click="back()"></a></ion-nav-buttons>
+    <ion-content class="has-header" scroll="false">
+        <div class="breadcrumb">{{'Common.Label.All'|translate}} &gt; <span class="current">{{'Common.Label.Game'|translate}}</span><span class="current right">{{day}}</span></div>
+        <div class="table-list">
+            <div class="table-head row">
+                <div class="col col-33">{{'Common.Label.Game'|translate}}</div>
+                <div class="col col-33">{{'Report.Label.Count'|translate}}</div>
+                <div class="col col-33">{{'Report.Label.WinLose'|translate}}</div>
+            </div>
+            <ion-content class="table-body table-body-nav">
+                <ion-refresher ng-if="ansycLoaded" on-refresh="dayRefresh()"></ion-refresher>
+                <div ng-if="!ansycLoaded" class="padding text-center"><ion-spinner></ion-spinner></div>
+                <div ng-if="ansycLoaded" class="table-body">
+                    <div class="row" ng-repeat="item in dayData" ng-click="gotoRptGame(item.GameClassID,item.GameClassName)">
+                        <div class="col col-33 row-data">{{item.GameClassName}}</div>
+                        <div ng-class="{'underline':item.TotalBetNums>0}" class="col col-33 row-data">{{item.TotalBetNums}}</div>
+                        <div class="col col-33 row-data {{item.WinLoseMoney>0?'win':item.WinLoseMoney==0?'':'lose'}}"><strong>{{item.WinLoseMoney.toFixed(2)}}</strong></div>
+                    </div>
+                </div>
+            </ion-content>
+        </div>
+    </ion-content>
+</ion-view>

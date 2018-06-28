@@ -1,0 +1,501 @@
+<style type="text/css">
+    .lottery-list {
+        top: 1.9rem!important;
+        margin-top: 42px!important;
+    }
+
+    .lottery-list .lottery_item:first-child {
+        border-top: 1px solid #f0f2f1;
+    }
+
+    .lottery-list .ly-title {
+        border-bottom: 1px solid #f2f3f3;
+        height: 2.063rem;
+        line-height: 2rem;
+        margin: 0 auto;
+        /*color: #4a84a4;*/
+        font-size: .756rem;
+        background: rgba(255, 255, 255, 0.3);
+        position: relative
+    }
+
+    .lottery-list .ly-title:before {
+        position: absolute;
+        content: "";
+        display: block;
+        left: .882rem;
+        top: .559rem;
+        height: .945rem;
+        width: .126rem;
+        /*background: #fd3e4e*/
+    }
+
+    .lottery-list #lypic + div {
+        margin-top: 0
+    }
+
+    .lottery-list .ly-title > span {
+        margin-left: 15px
+    }
+
+    .lottery-list .yo-ico-xl {
+        position: absolute;
+        right: .945rem
+    }
+
+    .lottery-list .ly-title i {
+        color: #c8c8c8
+    }
+
+    .lottery-list .ly-div {
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid #f2f3f3;
+        background: rgba(255, 255, 255, 0.3)
+    }
+
+    .lottery-list .ly-div a {
+        display: block;
+        float: left;
+        width: calc(25% - .15rem);
+        margin: .07rem;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        border-radius: 1rem;
+        color: #0b0b0b;
+    }
+
+    .lottery-list .ly-div a:active {
+        /*background: #eef1f1 !important*/
+    }
+
+    .lottery-list .ly-div a img {
+        display: block;
+        margin: .378rem auto .126rem;
+        width: 60%
+    }
+
+    .lottery-list .ly-div a p {
+        display: block;
+        text-align: center;
+        height: 1.26rem;
+        line-height: 1.26rem;
+        margin: 0 0 .441rem
+    }
+</style>
+<ion-view class="index" view-title="彩票大厅">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons side="left"><a class="button button-icon icon-homehover" href="#/home"></a></ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon icon icon-liebiao" ng-click="showPoper($event);"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="false" class="has-header">
+        <div class="no-title" ng-if="isLogin">
+            <div class="left lh-23px"><a class="backgrounduser" href="#/ucenter/index">{{My.getUserName()}}</a></div>
+            <div class="lh-23px"><span class="backgroundmoney">{{My.getMoney()}}</span><a
+                    href="#/bank/money?type=withdraw" class="right ry-button button button-small">提现</a><a
+                    href="#/bank/money?type=deposit" class="right ry-button button button-small mr-5">充值</a></div>
+        </div>
+        <div class="no-title" ng-if="!isLogin">
+            <div class="lh-23px"><a class="backgrounduser" href="#/login">会员登录</a></div>
+        </div>
+
+        <div class="row notice">
+            <div class="notice-icon"><i class="ion-volume-medium"></i></div>
+            <div class="col col-90 notice-content">
+                <zl-notice></zl-notice>
+            </div>
+        </div>
+        <ion-content class="lottery-list" style="color: #0b0b0b;">
+            <div class="lottery_item" style="width: 100%">
+                <div class="ly-title" ng-click="isExtend('ssc')">
+                    <span class="ng-binding">时时彩</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{sscCurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="sscIsShow">
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/cqssc" class="">
+                            <img src="./images/cq_ssc.png">
+                            <p class="ng-binding">重庆时时彩</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/tjssc" class="">
+                            <img src="./images/tj_ssc.png">
+                            <p class="ng-binding">天津时时彩</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/xjssc" class="">
+                            <img src="./images/xj_ssc.png">
+                            <p class="ng-binding">新疆时时彩</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/jsssc" class="">
+                            <img src="./images/g-jsssc.png">
+                            <p class="ng-binding">极速时时彩</p>
+                        </a>
+                    </span>
+                    <!--<span class="form-type-1">
+                        <a href="#/lottery/index/sfssc" class="">
+                            <img src="./images/sfcssc.png">
+                            <p class="ng-binding">三分时时彩</p>
+                        </a>
+                    </span>-->
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('pk')">
+                    <span class="ng-binding">PK拾</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{pkCurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="pkIsShow">
+                <span class="form-type-1">
+                    <a href="#/lottery/index/pk10" class="">
+                        <img src="./images/g-bjpk10.png">
+                        <p class="ng-binding">北京赛车PK拾</p>
+                    </a>
+                </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/jssc" class="">
+                            <img src="./images/g-jssc.png">
+                            <p class="ng-binding">极速赛车</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/xyft" class="">
+                            <img src="./images/g-xyft.png">
+                            <p class="ng-binding">幸运飞艇</p>
+                        </a>
+                    </span>
+                    <!--<span class="form-type-1">
+                        <a href="#/lottery/index/jsft" class="">
+                            <img src="./images/g-xyft.png">
+                            <p class="ng-binding">极速飞艇</p>
+                        </a>
+                    </span>-->
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('k3')">
+                    <span class="ng-binding">全国快3</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{k3CurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="k3IsShow">
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/jsk3" class="">
+                            <img src="./images/jsk3.png">
+                            <p class="ng-binding">江苏快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/fjk3" class="">
+                            <img src="./images/fjk3.png">
+                            <p class="ng-binding">福建快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/gxk3" class="">
+                            <img src="./images/gxk3.png">
+                            <p class="ng-binding">广西快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/ahk3" class="">
+                            <img src="./images/ahk3.png">
+                            <p class="ng-binding">安徽快3</p>
+                        </a>
+                    </span>
+
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/shk3" class="">
+                            <img src="./images/shk3.png">
+                            <p class="ng-binding">上海快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/hbk3" class="">
+                            <img src="./images/hbk3.png">
+                            <p class="ng-binding">湖北快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/hebk3" class="">
+                            <img src="./images/hebk3.png">
+                            <p class="ng-binding">河北快3</p>
+                        </a>
+                    </span>
+                    <!-- <span class="form-type-1">
+                         <a href="#/lottery/index/ffk3" class="">
+                             <img src="./images/ffk3.png">
+                             <p class="ng-binding">分分快3</p>
+                         </a>
+                     </span>
+                     <span class="form-type-1">
+                         <a href="#/lottery/index/sfk3" class="">
+                             <img src="./images/ffk3.png">
+                             <p class="ng-binding">三分快3</p>
+                         </a>
+                     </span>-->
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/jlk3" class="">
+                            <img src="./images/jlk3.png">
+                            <p class="ng-binding">吉林快3</p>
+                        </a>
+                    </span>
+                    <!--<span class="form-type-1">-->
+                    <!--<a href="#/lottery/index/hnk3" class="">-->
+                    <!--<img src="./images/hbk3.png">-->
+                    <!--<p class="ng-binding">河南快3</p>-->
+                    <!--</a>-->
+                    <!--</span>-->
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/gzk3" class="">
+                            <img src="./images/gzk3.png">
+                            <p class="ng-binding">贵州快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/bjk3" class="">
+                            <img src="./images/bjk3.png">
+                            <p class="ng-binding">北京快3</p>
+                        </a>
+                    </span>
+                    <!-- <span class="form-type-1">
+                         <a href="#/lottery/index/qhk3" class="">
+                             <img src="./images/gzk3.png">
+                             <p class="ng-binding">青海快3</p>
+                         </a>
+                     </span>-->
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/gsk3" class="">
+                            <img src="./images/gsk3.png">
+                            <p class="ng-binding">甘肃快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/nmgk3" class="">
+                            <img src="./images/nmgk3.png">
+                            <p class="ng-binding">内蒙古快3</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/jxk3" class="">
+                            <img src="./images/jxk3.png">
+                            <p class="ng-binding">江西快3</p>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('choose5')">
+                    <span class="ng-binding">11选5</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{choose5CurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="choose5IsShow">
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/gdchoose5" class="">
+                            <img src="./images/gdchoose5.png">
+                            <p class="ng-binding">广东11选5</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/sdchoose5" class="">
+                            <img src="./images/sdchoose5.png">
+                            <p class="ng-binding">山东11选5</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/fjchoose5" class="">
+                            <img src="./images/fjchoose5.png">
+                            <p class="ng-binding">福建11选5</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/bjchoose5" class="">
+                            <img src="./images/bjchoose5.png">
+                            <p class="ng-binding">北京11选5</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/ahchoose5" class="">
+                            <img src="./images/ahchoose5.png">
+                            <p class="ng-binding">安徽11选5</p>
+                        </a>
+                    </span>
+                    <!--<span class="form-type-1">-->
+                    <!--<a href="#/lottery/index/yfchoose5" class="">-->
+                    <!--<img src="./images/ahchoose5.png">-->
+                    <!--<p class="ng-binding">一分11选5</p>-->
+                    <!--</a>-->
+                    <!--</span>-->
+                    <!--<span class="form-type-1">-->
+                    <!--<a href="#/lottery/index/sfchoose5" class="">-->
+                    <!--<img src="./images/ahchoose5.png">-->
+                    <!--<p class="ng-binding">三分11选5</p>-->
+                    <!--</a>-->
+                    <!--</span>-->
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('kl')">
+                    <span class="ng-binding">快乐十分</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{klCurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="klIsShow">
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/gdkl10" class="">
+                            <img src="./images/gdklsf.png">
+                            <p class="ng-binding">广东快乐10分</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/cqkl10" class="">
+                            <img src="./images/cqklsf.png">
+                            <p class="ng-binding">重庆快乐10分</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/tjkl10" class="">
+                            <img src="./images/tjklsf.png">
+                            <p class="ng-binding">天津快乐10分</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/hnkl10" class="">
+                            <img src="./images/hnklsf.png">
+                            <p class="ng-binding">湖南快乐10分</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/sxkl10" class="">
+                            <img src="./images/sxklsf.png">
+                            <p class="ng-binding">山西快乐10分</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/ynkl10" class="">
+                            <img src="./images/ynklsf.png">
+                            <p class="ng-binding">云南快乐10分</p>
+                        </a>
+                    </span>
+                    <!--<span class="form-type-1">
+                        <a href="#/lottery/index/ffkl10" class="">
+                            <img src="./images/ffklsf.png">
+                            <p class="ng-binding">分分快乐10分</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/sfkl10" class="">
+                            <img src="./images/ffklsf.png">
+                            <p class="ng-binding">三分快乐10分</p>
+                        </a>
+                    </span>-->
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('qxc')">
+                    <span class="ng-binding">七星彩</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{qxcCurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="qxcIsShow">
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/qxc" class="">
+                            <img src="./images/qxc.png">
+                            <p class="ng-binding">七星彩</p>
+                        </a>
+                    </span>
+                    <!--<span class="form-type-1">
+                        <a href="#/lottery/index/ffqxc" class="">
+                            <img src="./images/g-mg.png">
+                            <p class="ng-binding">分分七星彩</p>
+                        </a>
+                    </span>
+                    <span class="form-type-1">
+                        <a href="#/lottery/index/wfqxc" class="">
+                            <img src="./images/g-mg.png">
+                            <p class="ng-binding">五分七星彩</p>
+                        </a>
+                    </span>-->
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('lhc')">
+                    <span class="ng-binding">六合彩</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{lhcCurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="lhcIsShow">
+                <span class="form-type-1">
+                    <a href="#/lottery/index/jslh" class="">
+                        <img src="./images/g-jslh.png">
+                        <p class="ng-binding">极速六合</p>
+                    </a>
+                </span>
+                    <span class="form-type-1">
+                    <a href="#/lottery/index/marksix" class="">
+                        <img src="./images/g-marksix.png">
+                        <p class="ng-binding">六合彩</p>
+                    </a>
+                </span>
+
+
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('kl8')">
+                    <span class="ng-binding">PC蛋蛋</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{kl8CurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="kl8IsShow">
+                <span class="form-type-1">
+                    <a href="#/lottery/index/kl8" class="">
+                        <img src="./images/kl8.png">
+                        <p class="ng-binding">北京快乐8</p>
+                    </a>
+                </span>
+                    <span class="form-type-1">
+                    <a href="#/lottery/index/pcdd" class="">
+                        <img src="./images/pc_28.png">
+                        <p class="ng-binding">PC蛋蛋</p>
+                    </a>
+                        <!--</span>
+                            <span class="form-type-1">
+                            <a href="#/lottery/index/ffpcdd" class="">
+                                <img src="./images/g-mg.png">
+                                <p class="ng-binding">分分PC蛋蛋</p>
+                            </a>
+                        </span>-->
+                </div>
+            </div>
+            <div class="lottery_item">
+                <div class="ly-title" ng-click="isExtend('other')">
+                    <span class="ng-binding">其它彩票</span>
+                    <span class="yo-ico-xl"><i class="icon icon-accessory ion-chevron-{{otherCurrentType}}"></i></span>
+                </div>
+                <div class="ly-div" ng-show="otherIsShow">
+                <span class="form-type-1">
+                    <a href="#/lottery/index/shssl" class="">
+                        <img src="./images/shssl.png">
+                        <p class="ng-binding">上海时时乐</p>
+                    </a>
+                </span>
+                    <span class="form-type-1">
+                <a href="#/lottery/index/pl3" class="">
+                    <img src="./images/pl3.png">
+                    <p class="ng-binding">排列三</p>
+                </a>
+                </span>
+                    <span class="form-type-1">
+                <a href="#/lottery/index/3d" class="">
+                    <img src="./images/3d.png">
+                    <p class="ng-binding">福彩3D</p>
+                </a>
+                </span>
+                </div>
+            </div>
+        </ion-content>
+    </ion-content>
+</ion-view>

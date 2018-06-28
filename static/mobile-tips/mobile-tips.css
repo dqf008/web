@@ -1,0 +1,76 @@
+ body {
+     _background-image: url(about:blank);     /*用浏览器空白页面作为背景*/
+     _background-attachment: fixed;     /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
+ }
+ .iealertMain {
+     font-family: Arial, Helvetica, sans-serif, Verdana, "SimSun", "Microsoft YaHei", "SimHei", "STHeiti";
+     color:white;
+     width: 100%;
+     z-index: 9999;                                                     /*设置浮动层次*/
+     overflow: visible;
+     position: fixed;
+     line-height:normal;
+     top: 0px;                                                         /* 其他浏览器下定位，在这里可设置坐标*/
+     _position: absolute;                                       /*IE6 用absolute模拟fixed*/
+     _top: expression(documentElement.scrollTop + "px"); /*IE6 动态设置top位置*/
+     /* documentElement.scrollTop 设置浮动元素始终在浏览器最顶，可以加一个数值达到排版效果 */
+     background-color:gold;
+     height: 25px;
+     text-align: center;
+     font-size: 18px;
+     padding-top: 2px;
+ }
+ .iealertMain a {
+    font-size: 18px;
+ }
+ .select-pop {
+    width:360px;
+    height:333px;
+    position:fixed!important;/* FF IE7*/
+    left:50%;
+    top:50%;
+    z-index:10999;
+    margin:-166px 0 0 -180px;
+}
+.select-pop2 {
+    width:360px;
+    height:280px;
+    background:url(pop1.png);
+}
+a.select-pop2 {
+    display:block;
+    width:181px;
+    height:53px;
+    background:url(pop2.png);
+    float:left;
+}
+a.select-pop2:hover {
+    background:url(pop2-hover.png);
+}
+a.select-pop3 {
+    display:block;
+    width:179px;
+    height:53px;
+    background:url(pop3.png);
+    float:left;
+}
+a.select-pop3:hover {
+    background:url(pop3-hover.png);
+}
+.popBg,.popIframe {
+    background-color: #000;
+    display:none;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;/*FF IE7*/
+    filter:alpha(opacity=50);/*IE*/
+    opacity:0.5;/*FF*/
+    z-index:10998;
+    position:fixed!important;/*FF IE7*/
+    position:absolute;/*IE6*/
+    _top:expression(eval(document.compatMode &&
+    document.compatMode=='CSS1Compat') ?
+    documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+    document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}

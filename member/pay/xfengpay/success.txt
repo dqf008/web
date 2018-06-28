@@ -1,0 +1,1 @@
+{"merchant":"XF30302198","amount":"0.01","currency":"CNY","orderNo":"201802051202305497995652","m_orderNo":"151780334782380","payType":"ONLINE_BANK_PAY","status":2,"sign":"ad8d1bf9a1057351952342b5261a9eee"}

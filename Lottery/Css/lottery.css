@@ -1,0 +1,66 @@
+
+#content {
+    /*background: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/bg.jpg') no-repeat center top;*/
+    background-color:transparent
+}
+
+#content:before {
+    display: none;
+}
+
+ul.game-list>li {
+    width: 496px;
+    margin: 10px 4px;
+    color: #fdecac;
+    font-size: 14px;
+    line-height: 45px;
+}
+
+ul.game-list>li:before {
+    content: '';
+    display: block;
+    height: 247px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+ul.game-list>li:after {
+    content: '进入游戏';
+    display: block;
+    width: 210px;
+    height: 57px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    line-height: 57px;
+    background: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/enter.png') no-repeat center top;
+}
+
+ul.game-list>li[game-box="more"]:after {
+    content: '敬请期待';
+}
+
+ul.game-list>li:hover:after {
+    color: #880139;
+    background-position: center bottom;
+}
+
+ul.game-list>li[game-box="bb"]:before {
+    background-image: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/bb.png');
+}
+
+ul.game-list>li[game-box="ig"]:before {
+    background-image: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/ig.png');
+}
+
+ul.game-list>li[game-box="ig6"]:before {
+    background-image: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/ig6.png');
+}
+
+ul.game-list>li[game-box="lx"]:before {
+    background-image: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/lx.png');
+}
+
+ul.game-list>li[game-box="more"]:before {
+    background-image: url('https://cdn.igsttech.com/Web.Portal/CT002-01.Portal/Content/Views/Lobby/Lottery/more.png');
+}

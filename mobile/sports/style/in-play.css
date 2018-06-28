@@ -1,0 +1,1476 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	line-height: 1.231;
+	 border-bottom: 8px solid #241807;
+}
+.LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+.inplay_header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-image: url(../images/header_inplay.jpg);
+	border-top: 1px solid black; 
+	/*border-bottom: 1px solid #cebbaa;*/
+}
+
+.header_inplay2 {
+	background-image: url(../images/header_inplay.jpg);
+	width: 23%;/*width: 26.5%;*/
+	color: #f7daba;
+	font-size: 15px;
+	line-height: 50px;
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	/*font-weight: bold;*/
+	border-left: 1px solid black;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+/*.header_inplay2:active {background-image:url(../images/menu_icon_up.jpg);}*/
+.header_inplay2_selected {
+	background-image: url(../images/header_inplay_selected.jpg); 
+	width: 23%;
+	color: #eaba54;
+	font-size: 15px;
+	line-height: 50px;
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	/*font-weight: bold;*/
+	border-left: 1px solid black;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.LayoutDiv1_title {
+	clear: both;
+	/*float: left;*/
+	margin-left: 0;
+	width: 100%;
+	background-image: url(../images/inplay_title_bg.jpg);
+	background-size: auto 100%;
+	color: white;
+	/*font-weight: bold;*/
+	line-height: 50px;
+	border-top: 1px solid #cebbaa; display:table;
+}
+.LIVE .LayoutDiv1_title {border-bottom: 1px solid #cebcab;}
+.FT.LIVE .LayoutDiv1_title,
+.BM.LIVE .LayoutDiv1_title,
+.TT.LIVE .LayoutDiv1_title
+ {border-bottom:none;}
+
+.LayoutDiv1_contact  {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #524028;
+	color: white;
+	/*font-weight: bold;*/
+	line-height: 55px;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 320px) {
+.gridContainer {
+	width: 100%;
+}
+.LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.oddsdetails {
+	height: 50px;
+	clear: both;
+	width: 100%;
+	border-bottom: 1px solid #cebcab;
+	/*line-height: 50px;/*test*/
+}
+.textwrap {
+	margin-top: 6px;
+}
+.textwrap_statement {
+	margin-top: 6px;
+	text-align: center;
+}
+
+.textwrap_outright {
+	margin-top: 1px;
+}
+#textwrap_acc {
+	width: 70%;
+}
+.textwrap_openbets {
+	padding-top: 6px;
+}
+.header_inplay {
+	background-image: url(../images/header_inplay.jpg);
+	width: 12%;
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	border-left: 1px solid black;
+	line-height: 45px;
+}
+.dropdown {
+	background-image: url(../images/header_inplay.jpg);
+	width: 15.5%;/*width: 10.5%;/*test*/
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	border-left: 1px solid black;
+	line-height: 45px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	padding-left:5px;
+}
+body:nth-of-type(1) .dropdown {/*padding-left:0;*/} /*only for google chrome.*/
+.header_inplay1 {
+	background-image: url(../images/header_inplay.jpg);
+	width: 15.5%;/*width: 10%;/*test*/
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	line-height: 45px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.accordion_content_wrap {
+	height: 50px;
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.hdp_content_longtitle {
+	background-image: url(../images/home_layer_4.jpg);
+	height: 50px;
+	width: 33.333333333333333333333333333%;
+	float: left;
+	color: #FFF;
+	text-align: center;
+	/*font-weight: bold;*/
+	position: relative;
+}
+.hdp_content_longtitle_selected {
+	background-image: url(../images/home_layer_5.jpg);
+	height: 50px;
+	width: 33.333333333333333333333333333%;
+	float: left;
+	color: #ffbf42;
+	text-align: center;
+	/*font-weight: bold;*/
+	position: relative;
+}
+.hdp_content {
+	background-image: url(../images/home_layer_5.jpg);
+	height: 50px;
+	line-height: 50px;
+	width: 33.333333333333333333333333333%;
+	/*float: left;*/
+	color: #FFF;
+	text-align: center;
+	/*font-weight: bold;*/
+	display:table-cell;
+	/*position: relative;*/
+	/*border-right: 1px solid #cebcab;*/
+}
+/* trial word wrap */
+.selection_wrap {
+	width: 50%;
+	background-image: url(../images/home_layer_2.jpg);
+	height: 50px;
+	line-height: 50px;
+	border: 0px;
+	border-top: 1px solid #cebcab;
+	border-bottom: 1px solid #cebcab;
+	overflow: hidden;
+	float: left;
+}
+.sportsdropdown_half_wrap {
+	height: 50px;
+	background: transparent no-repeat right;
+	padding-left: 10px;
+	padding-right: 15px;
+	border-radius: 0px;
+	display: block;
+	color: #FFF;
+	/*font-weight: 900;*/
+	border: 0px;
+	float: left;
+	-webkit-appearance: none;
+	white-space: pre-wrap; 
+	width: 100%;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 480px) {
+.textwrap {
+	margin-top: 0;
+}
+.dropdown {
+	width: 15.5%;/*test*/-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+}
+@media only screen and (min-width: 768px) {
+.gridContainer {
+	width: 100%;
+	max-width: 1366px;
+	margin: auto;
+}
+.LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.oddsdetails {
+	height: 50px;
+	clear: both;
+	width: 100%;
+	border-bottom: 1px solid #cebcab;
+	line-height: 50px;
+}
+.textwrap {
+	margin-top: 0;
+}
+.textwrap_statement {
+	margin-top: 0;
+	line-height: 50px;
+	text-align: center;
+}
+
+.textwrap_outright {
+	margin-top: 0;
+	line-height: 50px;
+}
+.textwrap_openbets {
+	padding-top: 0px;
+}
+
+#textwrap_acc {
+	width: 85%;
+}
+
+.header_inplay {
+	background-image: url(../images/header_inplay.jpg);
+	width: 10%;
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	border-left: 1px solid black;
+	line-height: 45px;
+}
+
+.header_inplay1 {
+	background-image: url(../images/header_inplay.jpg);
+	width: 15.5%;
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	line-height: 45px;
+}
+
+.LayoutDiv1_title {
+	clear: both;
+	/*float: left;*/
+	margin-left: 0;
+	width: 100%;
+	background-image: url(../images/inplay_title_bg.jpg);
+	color: white;
+	/*font-weight: bold;*/
+	line-height: 50px;
+	display:table;
+}
+.accordion_content_wrap {
+	height: 50px;
+	float: left;
+	clear: both;
+	width: 100%;
+	line-height: 50px;
+}
+.hdp_content_longtitle {
+	background-image: url(../images/home_layer_4.jpg);
+	height: 50px;
+	width: 33.333333333333333333333333333%;
+	float: left;
+	color: #FFF;
+	text-align: center;
+	/*font-weight: bold;*/
+	position: relative;
+	line-height: 50px;
+}
+.hdp_content_longtitle_selected {
+	background-image: url(../images/home_layer_5.jpg);
+	height: 50px;
+	width: 33.333333333333333333333333333%;
+	float: left;
+	color: #ffbf42;
+	text-align: center;
+	/*font-weight: bold;*/
+	position: relative;
+	line-height: 50px;
+}
+
+}
+
+
+/* buttons css*/
+.LayoutDiv5 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	background-image: url(../images/home_layer_5.jpg);
+	color: white;
+	/*font-weight: bold;*/
+	border-bottom: 1px solid #cebcab;
+	text-align: center;
+	/*height: 10%;*/
+	font-size: 15px;
+}
+#allsports, .allsports {
+	clear: both;
+	/*float: left;*/
+	/*margin-left: 0;*/
+	width: 100%;
+	display: block;
+	min-height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #cebcab;
+	background-image: url(../images/home_layer_4.jpg);
+	background-size: auto 100%;
+	color: white;
+	/*font-weight: bold;*/
+	/*height: 10%;*/
+	text-align: center;
+	font-size: 15px;
+	/*overflow:hidden; white-space: nowrap; text-overflow:ellipsis;*/
+}
+.more_league { display:table; width:100%;height: 52px;}
+.more_league .allsports {display:table-cell; line-height: 22px; vertical-align:middle;padding: 2px 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+/*.allsports[id="bottom_league"] { display:table-cell; line-height: 22px; vertical-align:middle; width:100%;}*/
+.goalbutton {
+	float: left;
+	margin-left: 0;
+	/*width: 50%;*/
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #cebcab;
+	background-image: url(../images/home_layer_4.jpg);
+	color: white;
+	/*font-weight: bold;*/
+	height: 10%;
+	text-align: center;
+	border-top: 1px solid #cebcab;
+}
+
+.goalbutton_selected {
+	float: left;
+	margin-left: 0;
+	/*width: 50%;*/
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #cebcab;
+	background-image: url(../images/home_layer_5.jpg);
+	color: #ffbf42;
+	/*font-weight: bold;*/
+	height: 10%;
+	text-align: center;
+	border-top: 1px solid #cebcab;
+}
+
+.bet {
+	clear: both;
+	/*float: left;*/
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #cebcab;
+	background-image: url(../images/home_right.jpg);
+	color: white;
+	/*font-weight: bold;*/
+	/*height: 10%;*/
+	text-align: center;
+}
+
+/* competition page css */
+.oddstitle {
+	height: 25px;
+	line-height: 25px;
+	clear: both;
+	width: 100%;
+}
+/*.oddstitle_outrights {
+	background-color: #1f1c18;
+	height: 25px;
+	line-height: 25px;
+	clear: both;
+	width: 100%;
+	color: #f6dbba;
+}
+*/
+.oddstitle_outrights_longtitle {
+	background-color: #1f1c18;
+	min-height: 25px;
+	/*height: 50px;*/
+	line-height: 25px;
+	clear: both;
+	width: 100%;
+	color: #f6dbba;
+	font-size: 15px;
+}
+.oddsdetails {
+	height: 50px;
+	clear: both;
+	width: 100%;
+	border-bottom: 1px solid #cebcab;
+}
+
+.oddsdetails a {
+	background-image: url(../images/odds_bg_hover.jpg);
+	background-size:auto 100%;
+	cursor:pointer;
+}
+
+/*.odds_box {
+	float: left; 
+	width: 26%;
+	color: #FFF; 
+	text-align: center;
+	background-image: url(../images/odds_bg.jpg);
+}*/
+
+.odds_box_todayoutright {
+	float: left; 
+	width: 10%; 
+	color: #FFF; 
+	text-align: center;
+	line-height: 50px;
+}
+
+/* HDP HEADER*/
+.hdp_header {
+	width: 100%;
+	border-bottom: 1px solid #cebcab;
+	border-top: 1px solid #cebcab;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	display: block;
+
+}
+.hdp_header strong { font-weight:normal;}
+.hdp_header_outright {
+	width: 100%;
+	border-top: 1px solid #cebcab;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	display: block;
+
+}
+
+.hdp_content_selected {
+	color: #ffbf42;
+	background-image: url(../images/home_layer_4.jpg);
+	height: 50px;
+	line-height: 50px;
+	width: 33.333333333333333333333333333%;
+	/*float: left;*/
+	/*font-weight: bold;*/
+	text-align: center;
+	display:table-cell;
+	/*position: relative;*/
+	/*border-right: 1px solid #cebcab;*/
+}
+.ann_type {
+	color:#4D4D4D; height: 52px;
+	line-height: 52px;
+	width: 33.333333333333333333333333333%;
+	text-align: center;
+	display:table-cell;
+}
+.ann_type_selected { color:#D2A139; height: 52px;
+	line-height: 52px;
+	width: 33.333333333333333333333333333%;
+	text-align: center;
+	display:table-cell;
+}
+/* accordion css */
+/*.acc_1 {
+	width: 100%;
+	background-image: url(../images/home_layer_2.jpg);
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	clear: both;
+	color: #FFF;
+	font-weight: bold;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	}*/
+.acc_1 {
+	width: 100%;
+	background-image: url(../images/home_layer_2.jpg);
+	background-size: auto 100%;
+	height: 50px;
+	line-height: 50px;
+	/*float: left;*/
+	clear: both;
+	color: #FFF;
+	/*font-weight: bold;*/
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	display:table; vertical-align:middle;
+	}/*test*/
+
+.accordion_content {
+	min-height: 50px;
+	line-height: 50px;
+	/*float: left;*/
+	clear: both;
+	width: 100%;
+	/*padding-left: 10px;*/
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	display: table-row;
+}
+.accordion_content_up {
+	min-height: 50px;
+	line-height: 50px;
+	/*float: left;*/
+	clear: both;
+	width: 100%;
+	/*padding-left: 10px;*/
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	background-image: url(../images/odds_bg_hover.jpg);
+	background-size:auto 100%;
+	display: table-row;
+}
+
+.accordion_content_2 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.accordion_content_2_up {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+	background-image: url(../images/odds_bg_hover.jpg);
+	background-size:auto 100%;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+@media only screen and (min-width: 320px) {.body_ou .odds_gray {padding-left: 5px;}}
+.odds_gray {
+	/*float: left;*/
+	color: #5d5d5d;
+	font-weight: bold;
+	/*padding-left: 10px;*/
+	padding-right: 0px;
+	line-height: 50px;
+	-webkit-box-sizing: border-box; 	-moz-box-sizing: border-box; 	 box-sizing: border-box;
+	display:inline-block; 
+	width:auto;
+	/*background-color:rgba(0,0,0,0.2);/*灰色 test*/
+}
+.accordion_content_2 .odds_gray, .accordion_content_2_up .odds_gray { float:left; padding-right: 0px; padding-left:10px; text-align:right;}/*body_ou*/
+.odds_blue {
+	/*float: left;*/
+	color: #0a5193;
+	font-weight: bold;
+	/*padding-left: 10px;*/
+	line-height: 50px;
+	-webkit-box-sizing: border-box; 	-moz-box-sizing: border-box; 	 box-sizing: border-box;
+	display:inline-block;
+	width:40px;
+	text-align:right;
+}
+.odds_red {
+	/*float: left;*/
+	color: #960000;
+	font-weight: bold;
+	/*padding-left: 10px;*/
+	line-height: 50px;
+	-webkit-box-sizing: border-box; 	-moz-box-sizing: border-box; 	 box-sizing: border-box;
+	display:inline-block;
+	width:46px;
+	text-align:right;
+	/*background-color:rgba(255,192,190,0.3);/*粉色test*/
+}
+.accordion_content_2 .odds_blue , .accordion_content_2 .odds_red ,
+.accordion_content_2_up .odds_blue , .accordion_content_2_up .odds_red  { float:left; padding-left: 10px;}
+/*@media only screen and (min-width: 320px) {	
+.body_ou .odds_gray {padding-left: 1px;}
+.body_ou .odds_red{padding-left: 1px;}
+}
+@media all and (min-width:480px) and (orientation:landscape) {	
+.body_ou .odds_gray {padding-left: 10px;}
+.body_ou .odds_red {padding-left: 10px;}
+}
+@media only screen and (min-width: 768px) {	
+.body_ou .odds_gray {padding-left: 10px;}
+.body_ou .odds_red {padding-left: 10px;}
+}*/
+/* matches area css */
+.matches {
+	background: #37312a;
+	height: 60px;
+	/*float: left;*/
+	clear: both;
+	width: 100%;
+	border-top: 1px solid #1a1815;
+	border-bottom: 1px solid #cebcab;
+	padding:14px;
+}
+/* =============== Scoreboard =============== */
+.FT .matches { background:#5A7D23 url(../images/matches_ft.jpg) no-repeat center 0; background-size: auto 100%; height:80px;}
+.OP .matches { background:#50573E url(../images/matches_op.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+.TN .matches { background:#6B813E url(../images/matches_tn.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+.BK .matches { background:#934C27 url(../images/matches_bk.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+.BM .matches { background:#37939D url(../images/matches_bm.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+.TT .matches { background:#852E2B url(../images/matches_tt.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+.VB .matches { background:#906f4b url(../images/matches_vb.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+.BS .matches { background:#779645 url(../images/matches_bs.jpg) no-repeat center 0; background-size: auto 100%; height: 80px; clear: both; width: 100%; padding:4px;}
+/* Scoreboard BK*/
+.matches_BK { background:#934C27 url(../images/matches_bk.jpg) no-repeat center 0; background-size: auto 100%; height: 65px; clear: both; width: 100%; padding:8px 6px;
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.matches_BK .scoreboard { background-color:rgba(0,0,0,0.3); vertical-align:middle;
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  
+ }
+.icon_N_more.scoreboard { width:21px;}
+.matches_BK > table { /*height:65px;*/}
+.matches_BK .odds_time_bk {  width: 60px; vertical-align:middle; text-align:center;
+ background-color:rgba(0,0,0,0.5);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+ }
+.matches_BK tr.team1 td {height: 10px !important;}
+.matches_BK .match_team tr:nth-child(1) td.team1:nth-child(1) { padding: 0px 0 0px 10px !important;}
+.matches_BK .match_team tr:nth-child(2) td.team1:nth-child(1) { padding: 0px 0 0px 10px !important;}
+.matches_BK .more_team_name { line-height:10px;}
+.more_team_name_BK {color: #F4E0BD; padding-left: 2px; width: auto; word-break:break-all; /*line-height:25px; */vertical-align:middle; }
+.team2_BK { line-height:20px !important; height:20px !important;color: #F4E0BD; text-align: center; /*width: 51px;*/ font-size:13px;}
+/*.team2_BK:empty { display: none;}*/
+/* Scoreboard TN*/
+.matches_TN { background:#6B813E url(../images/matches_tn.jpg) no-repeat center 0; background-size: auto 100%; /*height: 88px; */clear: both; width: 100%; padding:6px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}/*LIVE*/
+table.live_TN { width:100%; padding:0; margin:0;background-color:rgba(0,0,0,0.5);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/*table.live_TN td { padding:0;}*/
+.live_tn_head td { line-height:24px;/* padding-right:7px;*/
+	background-color:rgba(0,0,0,0.5); background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}
+.live_tn_main td {}
+.board_tn_set { padding-left:7px; color:#FFCD39;}
+.board_tn_set_H { font-size:11px; color:#818181; width:25px; text-align:center;}
+.board_tn_set_N { font-size:11px; color:#818181; width:21px; text-align:center;}/*icon N*/
+/* Scoreboard BM*/
+/*.matches_BM { background:#37939D url(../images/matches_bm.jpg) no-repeat center 0; background-size: contain; clear: both; width: 100%; padding:6px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}/*LIVE*/
+.matches_BM { background:#37939D url(../images/matches_bm.jpg) no-repeat center 0; background-size: auto 100%; /*height: 88px; */clear: both; width: 100%; padding:6px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}/*LIVE*/
+.matches_TT { background:#852E2B url(../images/matches_tt.jpg) no-repeat center 0; background-size: auto 100%; /*height: 88px; */clear: both; width: 100%; padding:6px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}/*LIVE*/
+table.live_TT { width:100%; padding:0; margin:0;background-color:rgba(0,0,0,0.5);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/* Scoreboard VB*/
+.matches_VB { background:#906f4b url(../images/matches_vb.jpg) no-repeat center 0; background-size: auto 100%; /*height: 88px; */clear: both; width: 100%; padding:6px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}/*LIVE*/
+
+.team3 { padding-left:7px; font-size:15px; height:25px; vertical-align:middle;}
+.serve_dot { color:#FFCD39; font-size:16px; display:table-cell; vertical-align:middle;}
+.serve_not { color:#8E8E8E; font-size:16px; display:table-cell; vertical-align:middle;}
+.live_dot { color:#5F7C1B; font-size:16px; /*padding-left:4px;*/ padding-right:5px; display:table-cell; vertical-align:middle;}
+.live_not { color:#C7C7C7; font-size:16px; /*padding-left:4px;*/ padding-right:5px; display:table-cell; vertical-align:middle;}
+.team_tn { display:table-cell;}
+.sc_set_H { color:#FFCD39; font-size:13px; font-weight:bold; width:25px; text-align:center; vertical-align:middle; border-left:1px solid #343E1B;}
+.sc_set_N { color:#FFCD39; font-size:13px; font-weight:bold; width:21px; text-align:center; vertical-align:middle;}/*icon N*/
+.matches_TT .sc_set_H { border-left:1px solid #421715;}
+.matches_VB .sc_set_H { border-left:1px solid #483724;}
+
+.sc_game_H { color:#F4E0BD; font-size:13px; width:25px; text-align:center; vertical-align:middle; border-left:1px solid #343E1B;}
+.sc_set_H, .sc_game_H {background-color:rgba(255,255,255,0.12);
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.12) 0%,rgba(255,255,255,0.12) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fffffff', endColorstr='#1fffffff',GradientType=0 ); /* IE6-9 */}
+.game_team_h { color:#F4E0BD; font-size:15px; padding-left:6px; word-break:break-all; display:table-cell; line-height:1.15;}
+
+.matches table.scoreboard { background-color:rgba(0,0,0,0.5);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+ }
+.bk_score, .tn_score { display:table; width:100%; padding-left:6px; background-color:#302414; line-height:28px; font-size:13px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+.game_score_td { display:table-cell; vertical-align:middle;}
+.game_total_td { display:table-cell; vertical-align:middle; text-align:right; padding-right:7px; white-space:nowrap;}
+.bk_score .score_name { display: inline-block;color:#F4E0BD;padding-right:7px; word-break:break-all; vertical-align:middle;}
+.tn_score .score_name { display: inline-block;color:#F4E0BD;padding-right:1px; word-break:break-all; vertical-align:middle;}
+.bk_score .score_name span { padding-left:5px;}
+.score2_h { color:#F4E0BD !important; }
+.score2_light { color:#FFCD39 !important;}
+
+.sc_total { color:#FFCD39; padding-left:2px;} 
+.delaye_data { line-height:23px; text-align:center; font-size:13px; color:#FF9D9D; background-color:#8C1600;}
+.delaye_odds_bg {/*float: left;*/ clear:both; width: 48%; height: 25px; vertical-align:middle; background-color:rgba(181,73,89,0.93);}
+
+.delaye_live { display:block; line-height:25px; text-align:center; font-size:13px; color:#FFF;}
+td.board_1 { padding:2px 3px;}
+td.board_2 { padding:0 3px 3px;}
+ .scoreboard td { vertical-align:middle;}
+ .board_redcard { /*width:6.3%; */ width:20px; color:#FFF; text-align:center; background-color:#90100A;}
+ .redcard_inbox { width:20px;}
+  /* FT R.B. Red Card*/
+ .FT.LIVE .board_team_h { /*width:35.75%;*/ padding:4px; font-size:15px; color:#F6E2BB; text-align:right; vertical-align:middle;}
+ .FT.LIVE .board_team_c { /*width:35.75%;*/ padding:4px; font-size:15px; color:#F6E2BB; text-align:left; vertical-align:middle;}
+ 
+ /* No Red Card*/
+ .FT .board_team_h,
+ .BK .board_team_h,
+ .OP .board_team_h,
+ .TN .board_team_h,
+ .BM .board_team_h,
+ .TT .board_team_h,
+ .VB .board_team_h,
+ .BS .board_team_h
+  {/* width:42.05%;*/ padding:4px 0 4px 4px; font-size:15px; color:#F6E2BB; text-align:right;width:48%;}
+.FT .board_team_c,
+.BK .board_team_c,
+.OP .board_team_c,
+.TN .board_team_c,
+.BM .board_team_c,
+.TT .board_team_c,
+.VB .board_team_c,
+.BS .board_team_c
+  { /*width:42.05%; */padding:4px 4px 4px 0; font-size:15px; color:#F6E2BB; text-align:left;width:48%;}
+
+ 
+ .board_score { /*width:15.9%;*/ width:42px; text-align:center; vertical-align:middle; color:#FFCD39;font-size:18px; }
+ .score_h { color:#C9A632 !important; font-weight:bold;}
+ .score_light { color:#FFCF11 !important; font-weight:bold;}
+ 
+ .score_v {font-size:15px; color:#FFCF11; font-weight:bold; display:block; width:42px;}
+ .score_rbv { display:block; width:42px;}
+ .board_score .icon_dash { margin-left:5px; margin-right:5px; color:#78787A;font-size:12px; /*line-height:18px;*/vertical-align: middle; font-style:normal; font-family:Arial, Helvetica, sans-serif; display:inline-block;}
+ body:nth-of-type(1) ..board_score em.icon_dash { vertical-align: baseline;} /*only for google chrome.*/
+ /*.board_score .icon_dash { display:inline-block; width:3px; height:100%; background: #FF6 url(../images/icon_dash.gif) no-repeat center; vertical-align:middle;}*/
+ 
+ table.board_title { padding:3px 4px !important;}
+ .board_l { width:50%; padding:0; text-align:left; line-height:15px; vertical-align:middle;}
+ .board_r { width:50%; padding:0; text-align:right; vertical-align:middle;}
+ .game_time { display:inline-block; line-height:16px;color: #F5E3BB; font-size:13px; font-family:Arial, Helvetica, sans-serif;}
+ .game_date {display:inline; padding-right:7px;color: #F5E3BB; font-size:13px; font-family:Arial, Helvetica, sans-serif;}
+ .live_time_board { display:inline-block; color: #ffbf42; font-size:13px; margin: -1px 6px 0 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ .live_ft_board { display:inline; padding-right:2px;color: #ffbf42; font-size:13px; }
+
+ /* =============== Scoreboard END =============== */
+ 
+ 
+tr.team1 {
+	color: #FFF;
+	width:100%;
+}
+td.team1 {
+	height: 30px;
+	line-height: 22px;
+	/*padding: 4px 0 4px 10px;*/
+	color: #FFF;
+	width:100%;/*overflow:hidden; white-space: nowrap; text-overflow:ellipsis;*/
+	vertical-align:middle;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.match_team tr:nth-child(1) td.team1:nth-child(1) { padding: 4px 0 2px 10px;}
+.match_team tr:nth-child(2) td.team1:nth-child(1) { padding: 2px 0 4px 10px;}
+/* Scoreboard */
+
+
+
+.team2 {
+	height: 30px;
+	line-height: 30px;
+	/*width: 41px;*/
+	color: #FFF; text-align: center; /*width: 51px;*/
+}
+.team2_only {	
+	height: 60px;
+	line-height: 60px;
+	color: #FFF; text-align: center; /*width: 51px; */vertical-align:middle;
+}
+/* menu drop down css */
+.dropdown {
+	background-image: url(../images/header_inplay.jpg);
+	width: 15.5%;
+	height: 50px;
+	float: left;
+	position: relative;
+	text-align: center;
+	border-left: 1px solid black;
+	line-height: 45px;
+	cursor: pointer;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.accordion_content_menu {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	width: 50%;
+	background-image: url(../images/button_cancel.jpg);
+	border-top: 1px solid #cebcab;
+	/*display:inline-block;*/
+}
+/*UC Bower Fix */
+#header_history.accordion_content_menu {position:relative; right:0;}
+.accordion_content_menu_log {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	width: 100%;
+	background-image: url(../images/button_cancel.jpg);
+	text-align: center;
+	border-top: 1px solid #cebcab;
+}
+
+.subaccountform_menu {
+	height: 50px;
+	clear: both;
+	border-bottom: 1px solid #cebcab;
+	color: #FFF;
+	/*font-weight: bold;*/
+	width: 100%;
+}
+.subaccountform_menu a {
+	color: #FFF;
+}
+
+/* bet slip */
+.betslip {
+	width: 300px;
+	border: 1px solid #cebcab;
+	font-size: 15px;
+}
+.betplace {
+	border: 1px solid #cebcab;
+}
+.betslip_header {
+	background-image: url(../images/header_inplay.jpg);
+	height: 50px;
+}
+.betslip_header_pop {
+	background-image: url(../images/header_inplay.jpg);
+	background-color:#524028;
+	height: 50px;
+}
+.msg_header_pop {
+	background-color:#524028;
+	height: 55px;
+}
+.placebet_but{
+	background-image: url(../images/button_login.jpg);
+	line-height: 50px;
+	color: #FFF;
+	/*font-weight: bold;*/
+	text-align: center;
+	clear: both;
+	border-top: 1px solid #cebcab;
+}
+.placebet_but:active {	background-image: url(../images/bet_refresh_hover.png);}
+.cont_but{
+	background-image: url(../images/button_login.jpg);
+	line-height: 50px;
+	color: #FFF;
+	/*font-weight: bold;*/
+	border-bottom: 1px solid #cebcab;
+	border-top: 1px solid #cebcab;
+}
+.view_open {
+	background-image: url(../images/button_cancel.jpg);
+	line-height: 50px;
+	color: #FFF;
+	/*font-weight: bold;*/
+	text-align: center;
+}
+.contact_content {
+	color: #453421;
+	padding: 20px 10px 10px 10px;
+	clear: both
+}
+.contact_jpeg {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	background:url(../images/contactus.jpg) no-repeat;
+	width:100px; height:80px;
+}
+
+/* announcement pafge */
+
+.search_btn {
+	background-image:url(../images/find_bg.jpg);
+	height: 37px;
+	line-height: 37px;
+	width: 56px;
+	/*float: left;*/
+	display:inline-block;
+	color: #FFF;
+	/*font-weight: bold;*/
+	text-align: center;
+	border: 1px solid #1e1c1a;
+	margin-left: 2px;
+	/*margin-top: 6px;*/
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	
+}
+.search_btn:active { color:#CCC; background-image: url(../images/home_layer_5.jpg);}
+
+/* *ANNOUCEMENT* */
+.annoucement_1 {
+	clear:both;
+	padding: 10px;
+}
+.annoucement_2 {
+	padding: 10px 10px 20px 10px;
+	background-color: #eae8e5;
+}
+/*.annoucement_3 {
+	background-color: #fad3d4;
+	padding: 10px 10px 20px 10px;
+}*/
+/* *ANNOUCEMENT* danger order*/
+.annoucement_3 {
+	padding: 10px;
+	background: #fad3d4 url(../images/refresh.png) no-repeat center;
+}
+.annoucement_3:active {
+	background-color: #de9496;
+}
+ /* order cancel */
+.annoucement_4 {
+	padding: 10px;
+}
+.annoucement_4 td, .annoucement_4 td div {text-decoration:line-through;}
+/*accounts pafe */
+
+.total_accounts {
+	height: 50px;
+	background-color: #1f1c18;
+	border-bottom: 1px solid #cdbcac;
+	float: left;
+	clear: both;
+	width: 100%;
+	font-size: 15px;
+}
+.openbets_header {
+	width: 100%;
+	border-bottom: 1px solid #cebcab;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	display: block;
+
+}
+.sportsdropdown {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	border-radius: 0px;
+	display: block;
+	color: #FFF;
+	/*font-weight: 900;*/
+	background:transparent url(../images/arrow_godown.png) no-repeat right;
+	border: 0px;
+	-webkit-appearance: none;
+}
+
+.selection {
+	width: 100%;
+	background-image: url(../images/home_layer_2.jpg);
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	clear: both;
+	border: 0px;
+	border-top: 1px solid #cebcab;
+	border-bottom: 1px solid #cebcab;
+	overflow: hidden;
+}
+.selection_HK {
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	clear: both;
+}
+/* Firefox */
+@-moz-document url-prefix()
+{	.selection_HK { background:transparent url(../images/arrow_godown.png) no-repeat right;
+	width: 100%;height: 50px;
+}}
+@-moz-document url-prefix()
+{	.HK_dropdown { background:transparent ; color:#C00;
+	width: 105%;height: 50px;
+}}
+.HK_dropdown {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 0px;
+	display: block;
+	color: #FFF;
+	/*font-weight: 900;*/
+	background:transparent url(../images/arrow_godown.png) no-repeat right;
+	border: 0px !important;
+	-webkit-appearance: none;
+	-moz-appearance:none;
+	padding-left: 10px;
+}
+/* For IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+  select , .HK_dropdown {
+	 -webkit-appearance: none; 
+	-moz-appearance: window;
+	appearance:none; 
+	-ms-appearance: none;
+	
+	  }
+}
+/* IE11 selector Hack*/
+_:-ms-fullscreen, :root .selector {background:transparent url(../images/arrow_godown.png) no-repeat right;
+-webkit-appearance: none; 
+	-moz-appearance: window;
+	appearance:none; 
+	-ms-appearance: none;
+}
+
+.HK {
+	height: 50px;
+	line-height: 25px;
+	clear: both;
+	width: 100%;
+	color: #f6dbba;
+}
+
+.sportsdropdown_half {
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	border-radius: 0px;
+	display: block;
+	color: #FFF;
+	/*font-weight: 900;*/
+	background:transparent url(../images/arrow_godown.png) no-repeat right;
+	border: 0px;
+	float: left;
+	-webkit-appearance: none;
+}
+
+/* trial pop up window css */
+
+/* Container */
+.modal {
+
+    /* Overlay page content */
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+	/*box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);/*Fix wheit*/
+    z-index: 10000;
+
+    /* Transition opacity on open */
+   /* -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;*/
+
+    /* Hide for now */
+    /*opacity: 0;*/
+    /*pointer-events: none;*/
+	/*display: table-cell;*/  vertical-align:middle; height:100vh; width:100vw; 
+	overflow:auto;
+	 -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */      
+
+	
+}
+ /* will be red only in google chrome */
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .modal { overflow:auto;}
+}*/
+/* Show modal */
+.modal:target {
+    opacity: 1;
+    /*pointer-events: auto;*/
+    /* at time of writing (Feb 2012), pointer-events not supported by Opera or IE */
+}
+
+/* Content */
+
+.modal > div {
+    width: 300px;
+    background: #fff;
+    position: relative;
+    margin: 1px auto  10%;
+
+    /* Default minimise animation */
+   /* -webkit-animation: minimise 500ms linear;
+    -moz-animation: minimise 500ms linear;
+    /* Prettify */
+    box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #ccc);
+    background: -webkit-linear-gradient(#fff, #ccc);
+    background: -o-linear-gradient(#fff, #ccc);
+	font-size: 15px;
+}
+@media only screen and (min-width: 300px) {.modal > div {    margin: 40px auto  10%;}}
+/*@media all and (min-width:320px) and (orientation:landscape) {	
+	.modal {position: absolute;}
+	.modal > div { margin: 1px auto  10%;}
+	body { background-color:#FCF;}
+}*/
+/*@media only screen and (min-width: 300px) {.modal > div { margin: 5px auto  10%;}}*/
+@media all and (min-width:480px) and (orientation:landscape) {	
+	.modal {position: fixed;}
+	.modal > div { margin: 1px auto  10%;}
+}
+@media all and (min-width:768px) {	
+	.modal {position: fixed; /*overflow:hidden; width:768px; margin-left:0; margin-top:0;*/}
+	.modal > div { margin: 13px auto  10%;}
+}
+/*@media all and (min-width:1024px) and (orientation:landscape) {	
+	.modal {width:1024px;}
+}
+@media all and (min-width:1025px) {	
+	.modal {width:100%;}
+}
+*/
+/* Override animation on modal open */
+.modal:target > div {
+   /* -webkit-animation-name: bounce;
+    -moz-animation-name: bounce;
+	*/
+}
+
+.modal h2 {
+    font-size: 36px;
+    padding: 0 0 20px;
+}
+/*
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale3d(0.1,0.1,1);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+  55% {
+    -webkit-transform: scale3d(1.08,1.08,1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95,0.95,1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  }
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+}
+
+@-webkit-keyframes minimise {
+  0% {
+    -webkit-transform: scale3d(1,1,1);
+  }
+  100% {
+    -webkit-transform: scale3d(0.1,0.1,1);
+  }
+}
+
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: scale3d(0.1,0.1,1);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+  55% {
+    -moz-transform: scale3d(1.08,1.08,1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0);
+  }
+  75% {
+    -moz-transform: scale3d(0.95,0.95,1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  }
+  100% {
+    -moz-transform: scale3d(1,1,1);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+}
+
+@-moz-keyframes minimise {
+  0% {
+    -moz-transform: scale3d(1,1,1);
+  }
+  100% {
+    -moz-transform: scale3d(0.1,0.1,1);
+  }
+}
+*/
+
+/* Modal close link */
+/* .modal a[href="#close"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+} */
+
+/* Reset native styles */
+/*.modal a[href="#close"]:focus {
+    outline: none;
+}
+
+/* Create close button */
+/*.modal a[href="#close"]:after {
+    display: block;
+
+    /* Position */
+   /* position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 1.5em;
+    padding: 1px 1px 1px 2px;
+
+    /* Style */
+   /* text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+*/
+/*    .modal a[href="#close"]:focus:after,
+    .modal a[href="#close"]:hover:after {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+}
+
+.modal a[href="#close"]:focus:after {
+    outline: 1px solid #000;
+}
+
+/* Open modal */
+a.openModal {
+    margin: 1em auto;
+    display: block;
+    width: 200px;
+    background: #ccc;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #ddd);
+    background: -webkit-linear-gradient(#fff, #ddd);
+    background: -o-linear-gradient(#fff, #ddd);
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+a.openModal:hover,
+a.openModal:focus {
+    background: -moz-linear-gradient(#fff, #ccc);
+    background: -webkit-linear-gradient(#fff, #ccc);
+    background: -o-linear-gradient(#fff, #ccc);
+}
+
+/* parlay bet slip */
+
+.parlay_bet_header {
+	width: 100%;
+	height: 50px;
+	background-image: url(../images/header_inplay.jpg);
+}
+.parlay_bet_back {
+	width: 20%;
+	text-align: center;
+	float: left;
+	line-height: 50px;
+	border-right: 1px solid #000;
+}
+.parlay_bet_refresh {
+	float: right;
+	margin-top: -50px;
+	width: 20%;
+}
+.parlay_placebets {
+	height: 50px;
+	width: 100%;
+	background-image: url(../images/button_login.jpg);
+	color: white;
+	/*font-weight: 900;*/
+	text-align: center;
+	font-size: 15px;
+	line-height: 50px;
+	border-top: 1px solid #cebcab;
+	border-bottom: 1px solid #cebcab;
+	clear: both;
+}
+
+/* css trial slide pop up */
+.popScroll {
+	z-index: 9999999999;
+}
+
+.pop-up {/*position:absolute;*/ top:0;}
+/*.pop-up:target {position:absolute; left:0;}*/
+.popBox { float:left;/*test*/
+	background-image: url(../images/button_login.jpg);
+	height: 50px;
+  /* alternatively fixed width / height and negative margins from 50% */
+  position:fixed; 
+  bottom:0;
+  width: 100%;
+  z-index:1;
+  font-size: 15px;
+  color: #FFF;
+  text-align: center;
+  line-height: 45px;
+  /* padding:1%; removed 17/07/2012 */
+  border-top: 1px solid #405119;
+  border-bottom: 1px solid #000;
+
+  /* CSS3 rounded corners, drop-shadow and opacity fade in */
+  -moz-border-radius:12px;
+  -webkit-box-shadow:2px 2px 4px #3a3a3a;
+  -moz-box-shadow:2px 2px 4px #3a3a3a;
+  box-shadow:2px 2px 4px #3a3a3a;
+  /*opacity:0;*/
+ /*
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.popBox strong { font-weight:normal;}
+:target .popBox {position:fixed; opacity:1;}
+
+.popBox:hover {box-shadow:3px 3px 6px #5a5a5a;}
+
+.lightbox {display:none; text-indent:-200em; background:#000; opacity:0.4; width:100%; height:100%; position:fixed; top:0; left:0; bottom:0; right:0;}
+:target .lightbox {display:block}
+
+.close {
+  position:absolute; top:-0.75em; right:-0.75em; display:block; width:1em; height:1em;
+  font:bold large/1 arial, sans-serif; text-align:center; text-decoration:none;
+  background:#000; border:3px solid #fff; color:#fff;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  -moz-box-shadow: 0 0 1px 1px #3a3a3a;
+  -webkit-box-shadow: 0 0 1px 1px #3a3a3a;
+  box-shadow: 0 0 1px 1px #3a3a3a;
+}
+/* .popScroll {max-height:99%; overflow-y:scroll;} removed 17/07/2012 */
+.popScroll {/*position:absolute; top:9%; left:3%; right:3%; bottom:9%; /*overflow-y:auto; *overflow-y:scroll; */padding-right:0.5em}
+
+/* checkbox pop up */
+input[type='checkbox'] {
+    width:20px;
+    height:20px;
+    background:white;
+	border: 1px solid #c7bcb0;
+	border-radius: 0px;
+}
+
+/* search */
+
+.slidingDiv {
+    height:300px;
+    background-color: #99CCFF;
+    padding:20px;
+    margin-top:10px;
+    border-bottom:5px solid #3399FF;
+}
+ 
+.show_hide {
+    display:none;
+}
+
+div.team_name { webkit-hyphens: auto;  -moz-hyphens: auto;  -ms-hyphens: auto;  hyphens: auto;}

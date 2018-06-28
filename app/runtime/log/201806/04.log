@@ -1,0 +1,1626 @@
+---------------------------------------------------------------
+[ 2018-06-04T20:24:16+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.048150s][吞吐率：20.77req/s] [内存消耗：1,229.91kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:24:18+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.147835s][吞吐率：6.76req/s] [内存消耗：2,117.05kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006120s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.069157s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.002258s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:24:18+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.161645s][吞吐率：6.19req/s] [内存消耗：2,116.29kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.075914s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.002122s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:24:19+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.030594s][吞吐率：32.69req/s] [内存消耗：1,229.72kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:26:51+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.217529s][吞吐率：4.60req/s] [内存消耗：2,116.23kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009883s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.090219s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.002747s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:26:51+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.227535s][吞吐率：4.39req/s] [内存消耗：2,116.98kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006174s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.068249s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.009820s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:26:52+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.043459s][吞吐率：23.01req/s] [内存消耗：1,229.72kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:26:58+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.081310s][吞吐率：12.30req/s] [内存消耗：2,117.05kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000846s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.034811s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:26:58+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.087778s][吞吐率：11.39req/s] [内存消耗：2,116.29kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.037013s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:26:59+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.026749s][吞吐率：37.38req/s] [内存消耗：1,229.72kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:27:44+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.093493s][吞吐率：10.70req/s] [内存消耗：2,117.05kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.033480s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000876s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:27:44+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.104289s][吞吐率：9.59req/s] [内存消耗：2,116.29kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010967s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.032194s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000786s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:27:45+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.039925s][吞吐率：25.05req/s] [内存消耗：1,229.72kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:29:55+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.107361s][吞吐率：9.31req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001175s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.046607s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000875s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:29:55+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.110695s][吞吐率：9.03req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000767s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.038301s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:29:56+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.032462s][吞吐率：30.81req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:30:02+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.101392s][吞吐率：9.86req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000744s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043716s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:02+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.108609s][吞吐率：9.21req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.047113s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000668s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:03+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.050647s][吞吐率：19.74req/s] [内存消耗：1,229.72kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:30:04+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.129591s][吞吐率：7.72req/s] [内存消耗：2,116.29kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001370s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.067941s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000705s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:04+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.138590s][吞吐率：7.22req/s] [内存消耗：2,117.05kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000871s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.074355s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.002656s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:05+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.040296s][吞吐率：24.82req/s] [内存消耗：1,229.72kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:30:11+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.092868s][吞吐率：10.77req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043028s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000612s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:11+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.099977s][吞吐率：10.00req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043364s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:12+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.042104s][吞吐率：23.75req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:30:26+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.145756s][吞吐率：6.86req/s] [内存消耗：2,115.77kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/jisusaiche/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000668s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.065147s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000677s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:26+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.153696s][吞吐率：6.51req/s] [内存消耗：2,116.44kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/jisusaiche/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002399s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.089425s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.001777s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:27+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.033101s][吞吐率：30.21req/s] [内存消耗：1,229.25kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/jisusaiche/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:30:33+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.100896s][吞吐率：9.91req/s] [内存消耗：2,116.44kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/jisusaiche/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000781s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.046390s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000799s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:33+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.106319s][吞吐率：9.41req/s] [内存消耗：2,115.77kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/jisusaiche/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043324s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.001183s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:30:34+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.029809s][吞吐率：33.55req/s] [内存消耗：1,229.25kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/jisusaiche/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:32:42+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.094833s][吞吐率：10.54req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000696s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.042991s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000703s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:32:42+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.104519s][吞吐率：9.57req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010933s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.041670s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.001031s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:32:43+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.033115s][吞吐率：30.20req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:37:48+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.091301s][吞吐率：10.95req/s] [内存消耗：2,116.51kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001806s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.040176s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:37:48+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.094078s][吞吐率：10.63req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001899s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043202s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000996s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:37:49+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.036710s][吞吐率：27.24req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:42:47+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.113487s][吞吐率：8.81req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016075s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.051294s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:42:47+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.118817s][吞吐率：8.42req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.048784s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:42:48+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.038829s][吞吐率：25.75req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:47:47+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.104668s][吞吐率：9.55req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001802s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.044738s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:47:47+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.113391s][吞吐率：8.82req/s] [内存消耗：2,116.51kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002469s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.044356s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.001176s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:47:47+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.027659s][吞吐率：36.15req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:52:44+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.103245s][吞吐率：9.69req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009850s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.040365s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:52:44+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.110026s][吞吐率：9.09req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009683s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043789s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:52:45+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.024278s][吞吐率：41.19req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T20:57:49+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.096238s][吞吐率：10.39req/s] [内存消耗：2,116.51kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001590s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.041162s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:57:49+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.098965s][吞吐率：10.10req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001546s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.044014s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[ 2018-06-04T20:57:50+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.027887s][吞吐率：35.86req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-04T21:02:50+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/doubleCount&type=jssc [运行时间：0.088896s][吞吐率：11.25req/s] [内存消耗：2,116.50kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'doubleCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->doubleCount[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.036350s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'jssc'  AND `opentime` BETWEEN 1528041601 AND 1528127999 ORDER BY `id` DESC [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2018-06-04T21:02:50+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/historyList&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/historyList&type=jssc [运行时间：0.092864s][吞吐率：10.77req/s] [内存消耗：2,115.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'historyList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->historyList[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.033432s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `opentime` BETWEEN 1528041601 AND 1528127999  AND `type` = 'jssc' ORDER BY `id` DESC [ RunTime:0.000636s ]
+---------------------------------------------------------------
+[ 2018-06-04T21:02:51+08:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/cldata&type=jssc
+[ info ] 127.local.com/app/ajax.php?s=kaijian/Lottery/cldata&type=jssc [运行时间：0.025209s][吞吐率：39.67req/s] [内存消耗：1,229.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\wwwroot\abpt\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'cldata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.kaijian.com/html/PK10/pk10kai.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36',
+  'origin' => 'http://www.kaijian.com',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => '127.local.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'jssc',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->cldata[ D:\wwwroot\abpt\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ LOG ] INIT File

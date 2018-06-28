@@ -1,0 +1,22 @@
+<ion-view view-title="在线存款">
+	<ion-nav-buttons side="left"><a class="button button-icon icon-prepage" ng-click="back();"></a></ion-nav-buttons>
+	<ion-content>
+		<div class="item-online item-bank">
+			<div class="item item-input">
+				<div class="col" style="max-width:100%">
+					<label class="item item-select">
+						<select ng-model="depositData.type" ng-options="val.name for val in appData">
+							<option value="">请选择</option>
+						</select>
+					</label>
+				</div>
+			</div>
+			<div class="item item-input"><input type="text" class="input-number reset-field" ng-model="depositData.money" placeholder="请填写存款金额" maxlength="10" /></div>
+			<button ng-click="depositSubmit()" ng-disabled="!depositData.type||!depositData.money" class="button button-block button-positive button-positive-theme">提交</button>
+			<p class="item-warn text-light red">温馨提示</p>
+			<p class="item-warn text-light">1.在线存款单笔最低<span class="red">{{min|money}}</span>元；</p>
+			<p class="item-warn text-light">2.单笔最高金额请以银行<span class="red">网上支付限额</span>为准；</p>
+			<p class="item-warn text-light">3.如遇到充值后长时间未到账请联系在线客服处理。</p>
+		</div>
+	</ion-content>
+</ion-view>

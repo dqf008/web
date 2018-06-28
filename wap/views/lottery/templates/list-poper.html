@@ -1,0 +1,12 @@
+<ion-popover-view class="my-popover">
+	<div class="list">
+		<a class="item" href="#/report/index?type=Lottery">投注记录</a>
+		<a class="item" href="#/lottery/history/">开奖结果</a>
+		<a class="item" href="#/bank/money?type=withdraw" ng-if="isLogin">提现</a>
+		<a class="item color-br-gray" ng-click="popover.hide()" ng-if="isLogin">
+			<div>即时注单</div>
+			<div ng-show="!countMoneyState"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+			<div ng-show="countMoneyState" class="color-orange">{{unbalancedMoney|money}}</div>
+		</a>
+	</div>
+</ion-popover-view>

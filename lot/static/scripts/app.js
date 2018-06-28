@@ -1,0 +1,1 @@
+!function(){"use strict";window.console||(window.console={log:function(){}});var s=[];window.JSON||s.push("json"),requirejs.config({baseUrl:"./static/scripts",deps:s,paths:{app:".",jquery:"jquery",json:"json3",underscore:"underscore",dialog:"dialog",cookie:"jquery.cookie",mustache:"mustache"},map:{"*":{css:"require-css/css"}},urlArgs:1479906702390,waitSeconds:50})}();

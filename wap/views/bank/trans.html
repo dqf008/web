@@ -1,0 +1,63 @@
+<ion-view class="m-report" cache-view="false" view-title="财务记录">
+    <ion-nav-buttons side="left"><a class="button button-icon icon-prepage" ng-click="back()"></a></ion-nav-buttons>
+    <ion-content class="has-header" scroll="false">
+        <div class="breadcrumb">
+            <span class="current">{{appData.TypeName}}</span>
+            <span class="current right">{{appData.Start+' 至 '+appData.End}}</span>
+        </div>
+        <div class="table-list table-list-detail">
+            <div class="row table-head">
+                <div class="col col-split">订单编号<br />流水号码</div>
+                <div class="col col-split">订单时间<br />（美东）</div>
+                <div class="col col-split">订单金额<br />订单状态</div>
+            </div>
+            <ion-content class="table-body table-body-nav">
+                <ion-refresher ng-if="ansycLoaded" on-refresh="refresh()"></ion-refresher>
+                <div ng-if="!ansycLoaded" class="padding text-center"><ion-spinner></ion-spinner></div>
+                <div ng-if="ansycLoaded&&!isRefresh" class="table-body">
+                    <div class="row" ng-repeat="item in listData" ng-click="showDetail($index)">
+                        <div class="col">{{item.id}}<br />{{item.orderId|short:10:'***'}}</div>
+                        <div class="col">{{item.date}}<br />{{item.time}}</div>
+                        <div class="col">{{item.money|money}}<br /><span ng-bind-html="item.status"></span></div>
+                    </div>
+                    <div ng-if="listData.length==0" class="empty-tip">暂无数据</div>
+                </div>
+                <div ng-if="ansycLoaded&&loadMore" class="spinner-warp"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+                <ion-infinite-scroll ng-if="ansycLoaded&&loadMore&&!isLoading" distance="1%" class="text-center" icon="ion-chevron-down" immediate-check="true" on-infinite="load()"></ion-infinite-scroll>
+            </ion-content>
+            <ion-footer-bar>
+                <div class="row table-footer">
+                    <div ng-if="!ansycLoaded||isRefresh" class="col"><ion-spinner class="spinner spinner-ios"></ion-spinner></div>
+                    <div ng-if="ansycLoaded&&!isRefresh" class="col col-33"><div class="button button-clear">合计</div></div>
+                    <div ng-if="ansycLoaded&&!isRefresh" class="col col-33"><div class="button button-clear">{{allData.totalNums}}</div></div>
+                    <div ng-if="ansycLoaded&&!isRefresh" class="col col-33"><div class="button bg-default">{{allData.totalMoney|money}}</div></div>
+                </div>
+            </ion-footer-bar>
+        </div>
+    </ion-content>
+    <script id="transfer-detail-template" type="text/ng-template">
+        <div class="row"><div class="col">订单单号：{{detail.id}}</div></div>
+        <div class="row"><div class="col">流水号码：{{detail.orderId}}</div></div>
+        <div class="row"><div class="col">转账金额：{{detail.money|money}}</div></div>
+        <div class="row" ng-if="detail.fee"><div class="col">转账赠送：{{detail.fee|money}}</div></div>
+        <div class="row" ng-if="detail.remark"><div class="col">转账信息：<br /><span ng-bind-html="detail.remark"></span></div></div>
+        <div class="row" ng-if="detail.bankName"><div class="col">转账银行：<br /><span ng-bind-html="detail.bankName"></span></div></div>
+        <div class="row" ng-if="detail.address"><div class="col">转账地址：<br /><span ng-bind-html="detail.address"></span></div></div>
+        <div class="row"><div class="col">订单状态：<span ng-bind-html="detail.status"></span></div></div>
+        <div class="row"><div class="col">订单时间：<br />{{detail.mdTime}} (美东)<br />{{detail.bjTime}} (北京)</div></div>
+    </script>
+    <script id="detail-template" type="text/ng-template">
+        <div class="row"><div class="col">订单单号：{{detail.id}}</div></div>
+        <div class="row"><div class="col">流水号码：{{detail.orderId}}</div></div>
+        <div class="row"><div class="col">订单金额：{{detail.money|money}}</div></div>
+        <div class="row" ng-if="detail.fee"><div class="col">手续费用：{{detail.fee|money}}</div></div>
+        <div class="row" ng-if="detail.fullName"><div class="col">收款人姓名：{{detail.fullName}}</div></div>
+        <div class="row" ng-if="detail.bankName"><div class="col">收款银行：{{detail.bankName}}</div></div>
+        <div class="row" ng-if="detail.cardNo"><div class="col">收款账号：{{detail.cardNo}}</div></div>
+        <div class="row" ng-if="detail.address"><div class="col">收款银行地址：{{detail.address}}</div></div>
+        <div class="row" ng-if="detail.remark"><div class="col">备注信息：{{detail.remark}}</div></div>
+        <div class="row"><div class="col">订单状态：<span ng-bind-html="detail.status"></span></div></div>
+        <div class="row"><div class="col">订单时间：<br />{{detail.mdTime}} (美东)<br />{{detail.bjTime}} (北京)</div></div>
+    </script>
+</ion-view>
+    

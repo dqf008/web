@@ -1,0 +1,32 @@
+---------------------------------------------------------------
+[ 2018-06-27T23:29:28-04:00 ] 127.0.0.1 GET /app/ajax.php?s=kaijian/Lottery/kjjg&type=ffk3
+[ info ] www.web.com/app/ajax.php?s=kaijian/Lottery/kjjg&type=ffk3 [运行时间：0.753751s][吞吐率：1.33req/s] [内存消耗：2,234.69kb] [文件加载：49]
+[ info ] [ LANG ] D:\web_k3\app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'kaijian',
+    1 => 'Lottery',
+    2 => 'kjjg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bta85g89npr5ebfbqncp8g9ib0; Sign2-guest=true; soundAbility=true; hkc_QuickMode=false; hfc_QuickMode=true; Sign2-303=open',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.web.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'ffk3',
+)
+[ info ] [ RUN ] app\kaijian\controller\Lottery->kjjg[ D:\web_k3\app\application\kaijian\controller\Lottery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001217s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_auto_data` [ RunTime:0.043050s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`c_auto_data` WHERE  `type` = 'ffk3'  AND `status` BETWEEN 0 AND 1 ORDER BY `qishu` DESC LIMIT 1 [ RunTime:0.000846s ]

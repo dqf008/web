@@ -1,0 +1,58 @@
+<ion-view view-title="更改密码" cache-view="false">
+	<ion-nav-buttons side="left">
+		<a class="button button-icon icon-prepage" ng-click="back();"></a>
+	</ion-nav-buttons>
+	<ion-content class="m-center m-info" scroll="false">
+		<cur-tabs class="tab-label" on-change="onChange(index)" tab-index="{{type}}">
+			<cur-tab tabscale="col col-50" title="登录密码">
+				<ion-content class="has-top-tabs">
+					<form name="mdfLoginPwdForm" novalidate>
+						<div class="list list-inset input-placeholder">
+							<div class="item item-input">
+								<input class="reset-field" type="password" name="OldLoginPwd" 
+								placeholder="请输入旧密码" ng-model="mdfLoginPwdData.OldLoginPwd" required ng-maxlength="20"/>
+							</div>
+							<p ng-if="((mdfLoginPwdForm.$submitted || mdfLoginPwdForm.OldLoginPwd.$touched)&&(mdfLoginPwdForm.OldLoginPwd.$error.required||mdfLoginPwdForm.OldLoginPwd.$error.maxlength))" class="item-warn text-assertive">* 请输入旧密码，最长20位字符</p>
+							<div class="item item-input">
+								<input class="reset-field" type="password" name="NewLoginPwd"
+								 placeholder="请输入新密码" required ng-model="mdfLoginPwdData.NewLoginPwd" ng-minlength="6" ng-maxlength="20"/>
+							</div>
+							<p class="item-warn text-assertive" ng-if="((mdfLoginPwdForm.$submitted || mdfLoginPwdForm.NewLoginPwd.$touched)&&(mdfLoginPwdForm.NewLoginPwd.$error.minlength||mdfLoginPwdForm.NewLoginPwd.$error.maxlength||mdfLoginPwdForm.NewLoginPwd.$error.required))" style="">* 新密码只能是6-20位字符</p>
+							<div class="item item-input">
+								<input class="reset-field" type="password" name="NewLoginPwdRpt"
+								 placeholder="请再次输入新密码" ng-model="mdfLoginPwdData.NewLoginPwdRpt" required/>
+							</div>
+							<p class="item-warn text-assertive" ng-if="mdfLoginPwdForm.NewLoginPwdRpt.$touched&&mdfLoginPwdData.NewLoginPwdRpt!=mdfLoginPwdData.NewLoginPwd&&mdfLoginPwdData.NewLoginPwdRpt">* 密码不一致</p>
+							<button type="submit" ng-disabled="mdfLoginPwdForm.$invalid||mdfLoginPwdData.NewLoginPwdRpt!=mdfLoginPwdData.NewLoginPwd" class="button button-block button-positive" ng-click="updatePwd();">确定修改</button>
+						</div>
+					</form>
+				</ion-content>
+			</cur-tab>
+			<cur-tab tabscale="col col-50" title="取款密码">
+				<ion-content class="has-top-tabs">
+					<form name="mdfFundPwdForm" novalidate>
+						<div class="list list-inset input-placeholder">
+							<p ng-if="!My.hasFundPwd()" class="item-warn2 text-assertive">温馨提示：第一次设置取款密码需要验证登录密码</p>
+							<div class="item item-input">
+								<input ng-if="My.hasFundPwd()" class="reset-field" type="password" name="OldFundPwd" placeholder="请输入旧密码" ng-model="mdfFundPwdData.OldFundPwd" required ng-pattern="/^\d{6}$/"/>
+								<input ng-if="!My.hasFundPwd()" class="reset-field" type="password" name="OldFundPwd" placeholder="请输入登录密码" ng-model="mdfFundPwdData.OldFundPwd" required ng-pattern="/^.{1,20}$/"/>
+							</div>
+							<p ng-if="((mdfFundPwdForm.$submitted || mdfFundPwdForm.OldFundPwd.$touched)&&(mdfFundPwdForm.OldFundPwd.$error.required||mdfFundPwdForm.OldFundPwd.$error.pattern))" class="item-warn text-assertive">* {{My.hasFundPwd()?'旧密码只能是6位数字':'请输入登录密码，最长20位字符'}}</p>
+							<div class="item item-input">
+								<input class="reset-field" type="password" name="NewFundPwd"
+								 placeholder="请输入新密码" required ng-model="mdfFundPwdData.NewFundPwd" ng-pattern="/^\d{6}$/"/>
+							</div>
+							<p class="item-warn text-assertive" ng-if="((mdfFundPwdForm.$submitted || mdfFundPwdForm.NewFundPwd.$touched)&&(mdfFundPwdForm.NewFundPwd.$error.required||mdfFundPwdForm.NewFundPwd.$error.pattern))" style="">* 新密码只能是6位数字</p>
+							<div class="item item-input">
+								<input class="reset-field" type="password" name="NewFundPwdRpt"
+								 placeholder="请再次输入新密码" ng-model="mdfFundPwdData.NewFundPwdRpt" required/>
+							</div>
+							<p class="item-warn text-assertive" ng-if="mdfFundPwdForm.NewFundPwdRpt.$touched&&mdfFundPwdData.NewFundPwdRpt!=mdfFundPwdData.NewFundPwd&&mdfFundPwdData.NewFundPwdRpt">* 密码不一致</p>
+							<button type="submit" ng-disabled="mdfFundPwdForm.$invalid||mdfFundPwdData.NewFundPwdRpt!=mdfFundPwdData.NewFundPwd" class="button button-block button-positive" ng-click="updateFundPwd();">确定修改</button>
+						</div>
+					</form>
+				</ion-content>
+			</cur-tab>
+		</cur-tabs>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,1080 @@
+---------------------------------------------------------------
+[ 2018-05-29T00:50:44-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:44-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:44-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:44-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:45-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:45-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:45-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:45-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:46-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:46-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:46-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:46-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:47-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:47-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:47-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:47-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:48-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:48-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:50-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:50-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.018600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:51-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:51-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:51-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:50:51-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:19-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:22-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:23-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:23-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:23-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:23-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:24-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:24-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:24-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:24-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:25-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:25-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:25-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:25-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:25-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:25-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:26-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:26-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:26-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:27-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:28-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:51:48-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 413 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:52:29-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/report/lottery/marksix/0
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-29 12:00:00' AND '2018-05-30 11:59:59' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-29 12:00:00' AND '2018-05-30 11:59:59' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-29T00:53:17-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/common/notice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_notice` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 ORDER BY `sort` DESC,`nid` DESC LIMIT 0,5 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:07-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:07-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/common/notice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_notice` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 ORDER BY `sort` DESC,`nid` DESC LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:07-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 2  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 2  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 2  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'okoklpp888'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:18-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.017600s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 2  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 2  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 2  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'okoklpp888'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:29-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 2  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 2  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.015601s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 2  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'okoklpp888'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:40-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 2  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 2  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 2  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'okoklpp888'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:06:51-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 2  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 2  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 2  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'okoklpp888'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:07:51-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 422 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 422 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:07:51-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/common/notice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_notice` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 ORDER BY `sort` DESC,`nid` DESC LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T06:07:51-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 422 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 422 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 422  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 422  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 422  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 422  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 422  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = '1231236'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = '1231236'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:02:17-04:00 ] 103.246.145.199 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:02:18-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/common/notice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_notice` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 ORDER BY `sort` DESC,`nid` DESC LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:02:18-04:00 ] 103.246.145.199 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 224  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 224  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 224  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 224  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 224  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'ab885868'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'ab885868'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:02:28-04:00 ] 103.246.145.199 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.314000s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 224  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 224  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 224  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 224  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 224  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'ab885868'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'ab885868'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:02:32-04:00 ] 103.246.145.199 GET /app/ajax.php?s=/member/finance/deposit/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+---------------------------------------------------------------
+[ 2018-05-29T07:03:46-04:00 ] 103.246.145.199 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015601s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 224 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:09-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.017600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015601s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:13-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:13-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:13-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:08:37-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/finance/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]A session had already been started - ignoring session_start()
+---------------------------------------------------------------
+[ 2018-05-29T07:08:42-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/finance/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.023601s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]A session had already been started - ignoring session_start()
+---------------------------------------------------------------
+[ 2018-05-29T07:08:53-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/finance/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]A session had already been started - ignoring session_start()
+---------------------------------------------------------------
+[ 2018-05-29T07:08:55-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:07-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/common/notice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_notice` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_notice` WHERE  `is_show` = 1 ORDER BY `sort` DESC,`nid` DESC LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:07-04:00 ] 182.16.12.114 GET /app/ajax.php?s=/member/report/lastWeek
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `win`,`bet_money` FROM `mydata1_db`.`k_bet` WHERE  `status` BETWEEN 0 AND 8  AND `uid` = 2  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`daily_report` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `platform_id`,`bet_amount`,`net_amount`,`rows_num` FROM `mydata1_db`.`daily_report` WHERE  `uid` = 2  AND `report_date` BETWEEN 1526961600 AND 1527652799 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_3` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_3` WHERE  `uid` = 2  AND `addtime` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `js` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`c_bet_data` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`c_bet_data` WHERE  `uid` = 2  AND `addtime` BETWEEN 1526961600 AND 1527652799  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`lottery_data` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `money`,`win` FROM `mydata1_db`.`lottery_data` WHERE  `username` = 'okoklpp888'  AND `bet_time` BETWEEN '2018-05-22 00:00:00' AND '2018-05-29 23:59:59'  AND `bet_ok` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata2_db`.`ka_tan` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `sum_m`,`rate`,`bm` FROM `mydata2_db`.`ka_tan` WHERE  `username` = 'okoklpp888'  AND `adddate` BETWEEN '2018-05-22 12:00:00' AND '2018-05-30 11:59:59'  AND `checked` = 1  AND `bm` <> 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:09-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:10-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.020600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015601s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:11-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T07:09:12-04:00 ] 182.16.12.114 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T16:47:42-04:00 ] 219.132.77.98 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 423 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 423 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T16:47:42-04:00 ] 219.132.77.98 GET /app/ajax.php?s=/member/finance/deposit/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 423 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 423 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+[ error ] [8]未定义数组索引: default
+---------------------------------------------------------------
+[ 2018-05-29T17:58:13-04:00 ] 103.246.145.199 GET /app/ajax.php?s=/member/users/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:13-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:13-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:14-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:14-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:14-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.016600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:14-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:14-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:15-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:15-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:15-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:15-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:16-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:16-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:16-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:16-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:16-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015601s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:58:17-04:00 ] 103.246.145.199 POST /app/ajax.php?s=/member/users/casino
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=mydata1_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata1_db`.`k_user` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata1_db`.`k_user_login` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `is_login` FROM `mydata1_db`.`k_user_login` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mydata5_db`.`aibo_close_game` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `mydata5_db`.`aibo_close_game` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]

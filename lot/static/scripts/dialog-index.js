@@ -1,0 +1,1 @@
+define(["app/common/tabs"],function(t){function e(){this.init()}return e.prototype.init=function(){t(function(){var e=t('[data-wdiget="tab"]'),a=e.find('[data-id="'+e.data("current")+'"]').index();e.tab({current:a,className:{hd:".tab-colored-hd",bd:".tab-colored-bd",item:".tab-colored-item",active:"tab-colored-active"},selected:function(){}})})},e});

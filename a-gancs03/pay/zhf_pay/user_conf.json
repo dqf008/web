@@ -1,0 +1,13 @@
+{
+    "pay_mid": "11",
+    "pay_mkey": "11",
+    "pay_pubKey": "11",
+    "pay_url": "11",
+    "open": [
+        "bank",
+        "wechat",
+        "alipay",
+        "qq"
+    ],
+    "status": 1
+}

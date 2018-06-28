@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>会员签到</title>
+        <script type="text/javascript" src="images/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $.ajax({
+                    url: "sign.php?type=sign&callback=?",
+                    type: "GET",
+                    dataType: "json",
+                    success: function(data){
+                        $(".sign-loading").addClass("sign-"+data["status"]);
+                        $(".sign-message").html(data["message"]);
+                        if(data["status"]=="success"){
+                            if(data["data"][0]>0){
+                                AddDiv("本次签到奖励", data["data"][0]+" <span>彩金</span>");
+                            }else{
+                                AddDiv("本次签到奖励", "手气不佳");
+                            }
+                            if(data["data"][4]>0){
+                                AddDiv("连续签到天数", data["data"][3]+" <span>天</span>");
+                                AddDiv("下次签到奖励", data["data"][4]+" <span>彩金</span>");
+                            }
+                            AddDiv("累计签到天数", data["data"][1]+" <span>天</span>");
+                            AddDiv("累计签到奖励", data["data"][2]+" <span>彩金</span>");
+                            $(".sign-icon").animate({height: "110px"}, "fast", function(){
+                                $(".sign-info").fadeIn("fast", function(){
+                                    setTimeout(function(){AutoScroll()}, 1200);
+                                });
+                            });
+                        }
+                    }
+                });
+            });
+            function AutoScroll(){     
+                $(".sign-info").find("div.sign-text:first").animate({    
+                    marginTop:"-65px"    
+                }, "fast", function(){     
+                    $(this).css({marginTop:"0px"}).appendTo($(this).parent());
+                    setTimeout(function(){AutoScroll()}, 1200);
+                });     
+            } 
+            function AddDiv(title, value){     
+                var signText = $("<div class=\"sign-text\"></div>");
+                signText.append("<div class=\"sign-title\">"+title+"</div>");
+                signText.append("<div class=\"sign-value\">"+value+"</div>");
+                signText.appendTo($(".sign-info"));
+            } 
+        </script>
+        <style type="text/css">
+            body{margin:0;overflow:hidden;font:14px "Microsoft YaHei";}
+            .sign{margin:0 auto;width:700px;height:250px;background:url(images/bg.gif) no-repeat right bottom}
+            .sign .sign-left{width:320px;height:250px;float:left}
+            .sign .sign-loading .sign-icon{width:320px;height:145px;background:url(images/loading_icon.gif) no-repeat center bottom}
+            .sign .sign-loading .sign-message{width:320px;line-height:25px;text-align:center;font-weight:bold;color:#bdead4}
+            .sign .sign-error .sign-icon{background-image:url(images/error_icon.png)}
+            .sign .sign-error .sign-message{color:#cc000f}
+            .sign .sign-notice .sign-icon{background-image:url(images/notice_icon.gif)}
+            .sign .sign-success .sign-icon{background-image:url(images/success_icon.gif)}
+            .sign .sign-success .sign-message{color:#83d8ac}
+            .sign .sign-info{overflow:hidden;text-align:center;height:65px;margin:0 auto}
+            .sign .sign-info .sign-text .sign-title{height:25px;line-height:25px}
+            .sign .sign-info .sign-text .sign-value{height:40px;line-height:40px;font-weight:bold;font-size:40px;color:#d3503d;}
+            .sign .sign-info .sign-text .sign-value span{line-height:14px;font-weight:normal;font-size:14px}
+        </style>
+    </head>
+    <body>
+        <div class="sign">
+            <div class="sign-left">
+                <div class="sign-loading">
+                    <div class="sign-icon"></div>
+                    <div class="sign-message">正在签到，请稍后...</div>
+                </div>
+                <div class="sign-info" style="display:none"></div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<ion-view view-title="投注记录">
+    <ion-nav-buttons side="left">
+        <a class="button button-icon icon-prepage"ng-click="back();"></a>
+    </ion-nav-buttons>
+    <ion-content class="m-center m-info m-report"scroll="false">
+        <cur-tabs class="tab-label"on-change="onChange(index)"tab-index="{{type}}">
+            <cur-tab tabscale="col col-50"title="皇冠体育">
+                <ion-content class="has-top-tabs">
+                    <div class="list list-inset input-placeholder">
+                        <div class="item item-input">
+                            <span class="col col-33">游戏类型</span>
+                            <span class="col col-66">
+                                <select ng-model="GameType.Sports">
+                                    <option value=""ng-selected="!GameType.Sports">请选择游戏类型</option>
+                                    <option value="{{value}}"ng-repeat="(value, text) in GameList.Sports">{{text}}</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="item item-input">
+                            <span class="col col-33">开始日期</span>
+                            <span class="col col-66"ng-class="{'item-tips':!StartDate}"ng-click="openDatePicker('StartDate')">{{!StartDate?'点击选择':StartDate}}</span>
+                        </div>
+                        <div class="item item-input">
+                            <span class="col col-33">结束日期</span>
+                            <span class="col col-66"ng-class="{'item-tips':!EndDate}"ng-click="openDatePicker('EndDate')">{{!EndDate?'点击选择':EndDate}}</span>
+                        </div>
+                    </div>
+                    <div class="padding">
+                        <button class="button button-block button-positive"ng-disabled="!GameType.Sports||!StartDate||!EndDate"ng-click="report()">查询</button>
+                    </div>
+                </ion-content>
+            </cur-tab>
+            <cur-tab tabscale="col col-50"title="系统彩票">
+                <ion-content class="has-top-tabs">
+                    <ul class="select_menu">
+                        <li class='PK10 JSSC XYFT active'>pk拾</li>
+                        <li id="SSC">时时彩</li>
+                        <li class='MARKSIX JSLH'>六合彩</li>
+                        <li id="K3">全国快3</li>
+                        <li id="KL10">快乐十分</li>
+                        <li id="SYXW">11选5</li>
+                        <li class="PCDD KL8">PC蛋蛋</li>
+                        <li id="QXC">七星彩</li>
+                        <li class="SHSSL PL3 3D">其他</li>
+                        <div style="clear:both;"></div>
+                    </ul>
+                    <div class="list list-inset input-placeholder" id="lotteryList">
+                        <div class="item item-input">
+                            <span class="col col-33">游戏类型</span>
+                            <span class="col col-66">
+                                <select ng-model="GameType.Lottery" id="selectLottery">
+                                    <option value=""ng-selected="!GameType.Lottery">请选择游戏类型</option>
+                                    <option value="PK10" class='ng-binding'>北京赛车PK拾</option>
+                                    <option value="JSSC" class='ng-binding'>极速赛车</option>
+                                    <option value="XYFT" class='ng-binding'>幸运飞艇</option>
+                                    <!--<option value="{{value}}"ng-repeat="(value, text) in GameList.Lottery">{{text}}</option>-->
+                                </select>
+                            </span>
+                        </div>
+                        <div class="item item-input">
+                            <span class="col col-33">开始日期</span>
+                            <span class="col col-66"ng-class="{'item-tips':!StartDate}"ng-click="openDatePicker('StartDate')">{{!StartDate?'点击选择':StartDate}}</span>
+                        </div>
+                        <div class="item item-input">
+                            <span class="col col-33">结束日期</span>
+                            <span class="col col-66"ng-class="{'item-tips':!EndDate}"ng-click="openDatePicker('EndDate')">{{!EndDate?'点击选择':EndDate}}</span>
+                        </div>
+                    </div>
+                    <div class="padding">
+                        <button class="button button-block button-positive"ng-disabled="!GameType.Lottery||!StartDate||!EndDate"ng-click="report()">查询</button>
+                    </div>
+                    <script>
+                        $("ul.select_menu").selectlottery();
+                    </script>
+                </ion-content>
+            </cur-tab>
+        </cur-tabs>
+    </ion-content>
+</ion-view>

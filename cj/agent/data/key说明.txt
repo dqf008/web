@@ -1,0 +1,16 @@
+hyck => 有效存款 +
+xtty => 系统体育 +
+lhc => 六合彩
+jscp => 极速彩票 +
+ssc => 时时彩 +
+ptcp => 普通彩票 +
+zrdz => 真人电子 +
+hyhl => 红利派送 +
+sxf => 手续费 +
+hyck => 会员提款
+
+子key
+bet_amount => 投注额（含和局），有效存款、会员提款、红利派送和手续费为产生金额
+net_amount => 派彩额（不含本金）
+valid_amount => 有效投注额（不含和局）
+rows_num => 统计条数

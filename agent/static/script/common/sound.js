@@ -1,0 +1,1 @@
+define(["howler"],function(n){function r(n){var r=Array.prototype.slice.call(arguments,1);return n.replace(/{(\d+)}/g,function(n,e){return"undefined"!=typeof r[e]?r[e]:n})}var e=official_cfg;return{play:function(n){n=n||"open";var o=new Howl({src:[e.common_url+r("/other/{0}.mp3",n)]});o.play()}}});

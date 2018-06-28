@@ -1,0 +1,187 @@
+<ion-content class="bet-view" scroll="false" data-pan="32" data-min="2" data-max="8">
+	<div class="sub-Navs" item-class="col-33">
+		<ion-scroll id="sub-navs" direction="x" scrollbar-x="false" delegate-handle="sub-navs">
+			<div class="row">
+				<div class="col sub-col col-33" ng-class="{navActive:curGame.panType==32||curGame.panType==35}" data-pan="32" data-min="2" data-max="8"><a class="item nav-item">二尾连</a></div>
+				<div class="col sub-col col-33" ng-class="{navActive:curGame.panType==33||curGame.panType==36}" data-pan="33" data-min="3" data-max="8"><a class="item nav-item">三尾连</a></div>
+				<div class="col sub-col col-33" ng-class="{navActive:curGame.panType==34||curGame.panType==37}" data-pan="34" data-min="4" data-max="8"><a class="item nav-item">四尾连</a></div>
+			</div>
+		</ion-scroll>
+		<div class="nav-content">
+			<ion-content class="tp40" scroll="false" ng-show="curGame.panType==32||curGame.panType==35">
+				<div class="sub-Navs" item-class="col-50">
+					<div class="row">
+						<div class="col sub-col col-50" ng-class="{navActive:curGame.panType==32}" data-subPan="32"><a class="item nav-item">中</a></div>
+						<div class="col sub-col col-50" ng-class="{navActive:curGame.panType==35}" data-subPan="35"><a class="item nav-item">不中</a></div>
+					</div>
+					<div class="nav-content">
+						<ion-content class="tp40">
+							<div ng-show="curGame.panType==32">
+								<div class="row text-center"><div class="col title-no">二尾连中</div></div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3201"><div class="bet-content">0尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3202"><div class="bet-content">1尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3203"><div class="bet-content">2尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3204"><div class="bet-content">3尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3205"><div class="bet-content">4尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3206"><div class="bet-content">5尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3207"><div class="bet-content">6尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3208"><div class="bet-content">7尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row end">
+									<div class="col col-50 bet ok" data-id="3209"><div class="bet-content">8尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3210"><div class="bet-content">9尾</div><div class="bet-item">--</div></div>
+								</div>
+							</div>
+							<div ng-show="curGame.panType==35">
+								<div class="row text-center"><div class="col title-no">二尾连不中</div></div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3501"><div class="bet-content">0尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3502"><div class="bet-content">1尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3503"><div class="bet-content">2尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3504"><div class="bet-content">3尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3505"><div class="bet-content">4尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3506"><div class="bet-content">5尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3507"><div class="bet-content">6尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3508"><div class="bet-content">7尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row end">
+									<div class="col col-50 bet ok" data-id="3509"><div class="bet-content">8尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3510"><div class="bet-content">9尾</div><div class="bet-item">--</div></div>
+								</div>
+							</div>
+						</ion-content>
+					</div>
+				</div>
+			</ion-content>
+			<ion-content class="tp40" scroll="false" ng-show="curGame.panType==33||curGame.panType==36">
+				<div class="sub-Navs" item-class="col-50">
+					<div class="row">
+						<div class="col sub-col col-50" ng-class="{navActive:curGame.panType==33}" data-subPan="33"><a class="item nav-item">中</a></div>
+						<div class="col sub-col col-50" ng-class="{navActive:curGame.panType==36}" data-subPan="36"><a class="item nav-item">不中</a></div>
+					</div>
+					<div class="nav-content">
+						<ion-content class="tp40">
+							<div ng-show="curGame.panType==33">
+								<div class="row text-center"><div class="col title-no">三尾连中</div></div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3301"><div class="bet-content">0尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3302"><div class="bet-content">1尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3303"><div class="bet-content">2尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3304"><div class="bet-content">3尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3305"><div class="bet-content">4尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3306"><div class="bet-content">5尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3307"><div class="bet-content">6尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3308"><div class="bet-content">7尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row end">
+									<div class="col col-50 bet ok" data-id="3309"><div class="bet-content">8尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3310"><div class="bet-content">9尾</div><div class="bet-item">--</div></div>
+								</div>
+							</div>
+							<div ng-show="curGame.panType==36">
+								<div class="row text-center"><div class="col title-no">三尾连不中</div></div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3601"><div class="bet-content">0尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3602"><div class="bet-content">1尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3603"><div class="bet-content">2尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3604"><div class="bet-content">3尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3605"><div class="bet-content">4尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3606"><div class="bet-content">5尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3607"><div class="bet-content">6尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3608"><div class="bet-content">7尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row end">
+									<div class="col col-50 bet ok" data-id="3609"><div class="bet-content">8尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3610"><div class="bet-content">9尾</div><div class="bet-item">--</div></div>
+								</div>
+							</div>
+						</ion-content>
+					</div>
+				</div>
+			</ion-content>
+			<ion-content class="tp40" scroll="false" ng-show="curGame.panType==34||curGame.panType==37">
+				<div class="sub-Navs" item-class="col-50">
+					<div class="row">
+						<div class="col sub-col col-50" ng-class="{navActive:curGame.panType==34}" data-subPan="34"><a class="item nav-item">中</a></div>
+						<div class="col sub-col col-50" ng-class="{navActive:curGame.panType==37}" data-subPan="37"><a class="item nav-item">不中</a></div>
+					</div>
+					<div class="nav-content">
+						<ion-content class="tp40">
+							<div ng-show="curGame.panType==34">
+								<div class="row text-center"><div class="col title-no">四尾连中</div></div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3401"><div class="bet-content">0尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3402"><div class="bet-content">1尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3403"><div class="bet-content">2尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3404"><div class="bet-content">3尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3405"><div class="bet-content">4尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3406"><div class="bet-content">5尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3407"><div class="bet-content">6尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3408"><div class="bet-content">7尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row end">
+									<div class="col col-50 bet ok" data-id="3409"><div class="bet-content">8尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3410"><div class="bet-content">9尾</div><div class="bet-item">--</div></div>
+								</div>
+							</div>
+							<div ng-show="curGame.panType==37">
+								<div class="row text-center"><div class="col title-no">四尾连不中</div></div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3701"><div class="bet-content">0尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3702"><div class="bet-content">1尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3703"><div class="bet-content">2尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3704"><div class="bet-content">3尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3705"><div class="bet-content">4尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3706"><div class="bet-content">5尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row">
+									<div class="col col-50 bet ok" data-id="3707"><div class="bet-content">6尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3708"><div class="bet-content">7尾</div><div class="bet-item">--</div></div>
+								</div>
+								<div class="row end">
+									<div class="col col-50 bet ok" data-id="3709"><div class="bet-content">8尾</div><div class="bet-item">--</div></div>
+									<div class="col col-50 bet ok" data-id="3710"><div class="bet-content">9尾</div><div class="bet-item">--</div></div>
+								</div>
+							</div>
+						</ion-content>
+					</div>
+				</div>
+			</ion-content>
+		</div>
+	</div>
+</ion-content>

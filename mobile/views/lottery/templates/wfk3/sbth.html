@@ -1,0 +1,51 @@
+<ion-content class="bet-view" scroll="false" data-min="3" data-sid="401">
+    <div class="sub-Navs">
+        <div class="nav-content">
+            <ion-content class="bp40">
+                <div class="row text-center">
+                    <div class="col title-no">三不同号</div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 bet ok" data-id="401,1">
+                        <div class="bet-content">
+                            <span class="round-10 data-1">1</span>
+                        </div>
+                    </div>
+                    <div class="col col-50 bet ok" data-id="401,2">
+                        <div class="bet-content">
+                            <span class="round-10 data-2">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 bet ok" data-id="401,3">
+                        <div class="bet-content">
+                            <span class="round-10 data-3">3</span>
+                        </div>
+                    </div>
+                    <div class="col col-50 bet ok" data-id="401,4">
+                        <div class="bet-content">
+                            <span class="round-10 data-4">4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 bet ok" data-id="401,5">
+                        <div class="bet-content">
+                            <span class="round-10 data-5">5</span>
+                        </div>
+                    </div>
+                    <div class="col col-50 bet ok" data-id="401,6">
+                        <div class="bet-content">
+                            <span class="round-10 data-6">6</span>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </div>
+        <div class="row text-center tips">
+            <div class="col sub-col navActive"><a class="item nav-item">即时赔率：{{shareData.lotteryState==1?curGame.odds['j'+curGame.superId]:'--'}}</a>
+            </div>
+        </div>
+    </div>
+</ion-content>

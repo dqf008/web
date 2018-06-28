@@ -1,0 +1,36 @@
+<ion-view cache-view="false" class="m-cash" view-title="一键转账">
+    <ion-nav-buttons side="left"><a class="button button-icon icon-prepage" ng-click="back()"></a></ion-nav-buttons>
+    <ion-content class="q-transfer has-header">
+        <div ng-if="!allowed" class="list padding" style="text-align:center">
+            <p class="item"><img src="./images/icon-disabled.png"></p>
+            <p class="item">您暂时不能进行额度转换</p>
+            <p class="item">如有疑问请联系在线客服</p>
+        </div>
+        <div ng-if="allowed" class="row">
+            <h5>请选择转入钱包，选中后系统会将所有钱包余额转入该钱包</h5>
+            <div class="col col-{{wallet.colSpan*33}} relative" ng-repeat="wallet in walletList" ng-class="{unchoose:wallet.State==0||wallet.LoadingState == 2||wallet.IsOnline == 1}" ng-if="wallet.OpenState==1">
+                <div class="item" ng-class="{'item-load':wallet.TransferLoading==1}" ng-click="allIn($index)">
+                    <div ng-if="wallet.TransferLoading==1" class="item-load-icon"><ion-spinner></ion-spinner></div>
+                    <i class="item-done icon ion-checkmark-circled" ng-if="wallet.TransferLoading==0"></i>
+                    <i class="item-error icon ion-close-circled" ng-click="showError($index);$event.stopPropagation();" ng-if="wallet.TransferLoading==2"></i>
+                    <!--img ng-if="wallet.GameClassID==0" ng-src="{{'images/icon-wallet.png'}}">
+                    <img ng-if="wallet.GameClassID==1" ng-src="{{'images/icon-egame.png'}}">
+                    <img ng-if="wallet.GameClassID==2" ng-src="{{'images/icon-lottery.png'}}">
+                    <img ng-if="wallet.GameClassID==3" ng-src="{{'images/icon-maya.png'}}">
+                    <img ng-if="wallet.GameClassID==4" ng-src="{{'images/icon-ag.png'}}">
+                    <img ng-if="wallet.GameClassID==5" ng-src="{{'images/icon-keno.png'}}">
+                    <img ng-if="wallet.GameClassID==6" ng-src="{{'images/icon-sports.png'}}">
+                    <img ng-if="wallet.GameClassID==7" ng-src="{{'images/icon-mg.png'}}">
+                    <img ng-if="wallet.GameClassID==8" ng-src="{{'images/icon-sbsports.png'}}">
+                    <img ng-if="wallet.GameClassID==9" ng-src="{{'images/icon-rp.png'}}">
+                    <img ng-if="wallet.GameClassID==10" ng-src="{{'images/icon-fruit.png'}}"-->
+                    <p>{{wallet.GameClassName}}</p>
+                    <p ng-if="wallet.LoadingState == 0 && transerModel.classLoading==0">{{wallet.walletBalance}}</p>
+                    <p ng-if="(wallet.LoadingState != 2 || transerModel.classLoading != 2) && wallet.State == 0">维护中</p>
+                    <p ng-if="(wallet.LoadingState == 2 || transerModel.classLoading == 2) && wallet.State != 0">查询失败</p>
+                    <p ng-if="(wallet.LoadingState == 1 || transerModel.classLoading==1) && wallet.LoadingState != 2 && transerModel.classLoading!=2"><ion-spinner></ion-spinner></p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

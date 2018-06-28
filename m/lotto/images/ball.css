@@ -1,0 +1,29 @@
+.mark_six div{
+    background:url("ball_bg.png") left top no-repeat;
+    color:#000;
+    font-family:"Verdana", "Geneva", "sans-serif";
+    /* font-weight:bold; */
+    height:27px;
+    width:28px;
+    float:left;
+    font-size:12px;
+    line-height:27px;
+    text-align:center;
+}
+.mark_six .ball_00{
+    background:none;
+    width:18px;
+}
+.mark_six .ball_01, .mark_six .ball_02, .mark_six .ball_07, .mark_six .ball_08, .mark_six .ball_12, .mark_six .ball_13, .mark_six .ball_18, .mark_six .ball_19, .mark_six .ball_23, .mark_six .ball_24, .mark_six .ball_29, .mark_six .ball_30, .mark_six .ball_34, .mark_six .ball_35, .mark_six .ball_40, .mark_six .ball_45, .mark_six .ball_46{
+    background-position:left top;
+}
+.mark_six .ball_05, .mark_six .ball_06, .mark_six .ball_11, .mark_six .ball_16, .mark_six .ball_17, .mark_six .ball_21, .mark_six .ball_22, .mark_six .ball_27, .mark_six .ball_28, .mark_six .ball_32, .mark_six .ball_33, .mark_six .ball_38, .mark_six .ball_39, .mark_six .ball_43, .mark_six .ball_44, .mark_six .ball_49{
+    background-position:left bottom;
+}
+.mark_six .ball_03, .mark_six .ball_04, .mark_six .ball_09, .mark_six .ball_10, .mark_six .ball_14, .mark_six .ball_15, .mark_six .ball_20, .mark_six .ball_25, .mark_six .ball_26, .mark_six .ball_31, .mark_six .ball_36, .mark_six .ball_37, .mark_six .ball_41, .mark_six .ball_42, .mark_six .ball_47, .mark_six .ball_48{
+    background-position:left center;
+}
+.mark_six .ball_50{
+    background:none;
+    font-size:12pt;
+}

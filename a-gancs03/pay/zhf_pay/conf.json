@@ -1,0 +1,43 @@
+{
+  "pay_info": {
+    "name": "智慧付",
+    "code": "zhf_pay"
+  },
+  "pay_list": {
+    "bank": {
+      "code": "bank",
+      "name": "网银",
+      "online_name": "网银充值",
+      "input_url": "/member/pay/zhf.php",
+      "post_url": "/member/pay/zhf/MerToDinpay.php",
+      "notice_url": "/member/pay/zhf/DinpayToMer.php"
+    },
+    "wechat": {
+      "code": "wechat",
+      "name": "微信",
+      "online_name": "微信扫码",
+      "input_url": "/member/pay/zhfwx.php?type=2",
+      "post_url": "/member/pay/zhfwx/post.php?type=2",
+      "advice_url": "/member/pay/zhfwx/get.php",
+      "notice_url": "/member/pay/zhfwx/notify.php"
+    },
+    "alipay": {
+      "code": "alipay",
+      "name": "支付宝",
+      "online_name": "支付宝扫码",
+      "input_url": "/member/pay/zhfwx.php?type=1",
+      "post_url": "/member/pay/zhfwx/post.php?type=1",
+      "advice_url": "/member/pay/zhfwx/get.php",
+      "notice_url": "/member/pay/zhfwx/notify.php"
+    },
+    "qq": {
+      "code": "qq",
+      "name": "QQ钱包",
+      "online_name": "QQ钱包扫码",
+      "input_url": "/member/pay/zhfwx.php?type=3",
+      "post_url": "/member/pay/zhfwx/post.php?type=3",
+      "advice_url": "/member/pay/zhfwx/get.php",
+      "notice_url": "/member/pay/zhfwx/notify.php"
+    }
+  }
+}

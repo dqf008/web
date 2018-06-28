@@ -1,0 +1,11 @@
+{
+    "pay_mid": "1",
+    "pay_mkey": "1",
+    "pay_url": "1",
+    "open": [
+        "wechat",
+        "alipay",
+        "qq"
+    ],
+    "status": 1
+}

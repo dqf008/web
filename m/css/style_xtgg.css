@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+#scrlContainer{  
+    visibility:hidden;  
+    background:#f1f1f1;  
+    position:relative;  
+    overflow:hidden;  
+    width:95%;  
+    height:20px;  
+    line-height:20px;
+    margin:2px 0px 0px 1px; 
+    float: left;
+}  
+  
+#scrlContent{
+    position:absolute;  
+    left:0;  
+    top:0;  
+    white-space:nowrap; 
+}  
+
+#xtgg{
+	width:100%;
+	height:20px;
+}
+
+.clear{ clear:both;display: none;} 

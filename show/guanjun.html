@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>home</title>
+	<meta http-equiv="Cache-Control" content="max-age=864000" />
+	<script language="javascript" src="../js/jquery.js"></script>
+	<script language="javascript" src="../js/jquery_dialog.js"></script>
+	<script language="javascript" src="guanjun.js"></script>
+	<script language="javascript" src="/js/guanjun.js"></script>
+	<script language="javascript" src="/js/times.js"></script>
+	
+	<script language="javascript" src="../js/common.js"></script>
+	<script language="javascript" src="../js/show.js" ></script>
+	<script language="javascript" src="../js/mouse.js"></script>
+
+	<link href="/sprots_images/bet_maincortol.css" rel="stylesheet" type="text/css">
+	<link href="/sprots_images/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="loaded(document.getElementById('league').value,0);">
+<div  id="max_leg">
+      
+    <div id=fixhead_layer class="fixhead_layer">
+      
+       <div class="bet_head">
+              
+          <!--左侧按钮-->
+          <div class="bet_left">
+          	  <div style="display:none" id="aaaaa">0</div>
+			    <input type="hidden" name="league" id="league" value="" />
+			    <input type="hidden" name="top_f5" id="top_f5" value="0" />
+	          <span id="sel_league" onClick="chg_league();" class="bet_league_btn">
+	          	<tt class="bet_normal_text">选择联赛&nbsp;<tt id="str_num" class="bet_yellow">(全部)</tt></tt>
+	          </span>
+	          <span id="show_pg_chk" style="display:none;" class="bet_paging">
+		          <label>
+		          	<input id="pg_chk" onClick="clickChkbox();" type="checkbox"  class="bet_selsect_box" value="C" id="box_C"><span></span><span class="bet_more_chk">分页</span>
+		          </label>
+	          </span>
+	          <div id="show_pg_chk_msg" style="display:none;" class="bet_game_head_i">
+	          	<div class="bet_head_i_bg">
+	          		<span class="bet_head_iarrow_text">如您觉得网页运行缓慢,请选分页，<br>这会限制每页显示的比赛场数。</span>
+	          	</div>
+	          </div>
+          </div>
+      
+          <!--右侧按钮-->
+          <div class="bet_right">
+         	<span class="bet_time_btn" onClick="javascript:refreshReload('',true)"><tt id="refreshTime" class="bet_time_text"></tt></span>
+          </div>
+         
+       </div>
+    </div>
+
+    <div id="backTOP" style="display:none;" onClick="backtop();" class="bet_top_bg"></div> 
+    <div id="showgames" class="showtable_normal"></div>
+    <div id=showtable class="showtable_normal"></div>
+        
+	<div id="showlayers" style="display:none;">
+        <xmp>                                                                                                        
+          <table cellpadding="0" cellspacing="0" border="0" class="bet_game_table">
+     		<tr id="title_tr" name="fixhead_copy" class="bet_game_title">
+        		<td colspan="2" class="bet_game_name">足球<br><tt class="bet_game">冠军</tt></td>
+     		</tr>
+          	*ShowGame*
+          </table>     
+          <div id="show_page_txt" style="display:none;" class="bet_page_bot"></div>
+        </xmp>                                                                                       
+    </div>	                                                                                           
+						
+	<div id="glist" style="display: none">
+		<xmp>
+      		<tr *LegMark* *ST*>
+           		<td id="*GID*_*LEG*" onClick="showLEG('*GID*')" colspan="2">*LEG*<span class="bet_corr_number">*TIME*</span></td>
+         	</tr>
+								
+        	<tr class="bet_date_small_title" id="TR_*GID*">
+            	<td colspan="2"><span>*ITEM*</span></td>
+         	</tr>
+         	*TEAM* 	
+		</xmp>
+	</div>
+		     	
+	<div id=NoDataTR style="display:none;">
+		<xmp>
+			<tr>
+				<td colspan="20" class="bet_no_game">您选择的项目暂时没有赛事。</td>
+			</tr>
+		</xmp>
+	</div>
+					
+	<div id="legView" style="display:none; width:100%; height:100%;" class="legView">
+	    <div class="leg_head" onMousedown="initializedragie('legView')"></div>
+		<div style="width:100%; height:100%;">
+			<iframe id="legFrame" frameborder="no" border="0" allowtransparency="true" scrolling="no" width=100% height=100%></iframe>
+		</div>
+		<div class="leg_foot"></div>
+	</div> 				
+      
+</div>
+</body>
+</html>

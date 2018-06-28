@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>home</title>
+	<meta http-equiv="Cache-Control" content="max-age=864000" />
+	<script language="javascript" src="../js/jquery.js"></script>
+	<script language="javascript" src="../js/jquery_dialog.js"></script>
+	<script language="javascript" src="../js/common_gq.js"></script>
+	<script language="javascript" src="ft_gunqiu.js" ></script>
+	<script language="javascript" src="../js/show.js" ></script>
+	<script language="javascript" src="../js/bet_match.js"></script>
+	<script language="javascript" src="../js/times.js"></script>
+	<script language="javascript" src="/js/mouse.js"></script>
+	
+	<link href="/sprots_images/bet_maincortol.css" rel="stylesheet" type="text/css">
+	<link href="/sprots_images/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="loaded(document.getElementById('league').value,0);">
+<div  id="max_leg">
+	<div id=fixhead_layer class="fixhead_layer">
+
+		<div class="bet_head">
+			<!--左侧按钮-->
+			<div class="bet_left">
+				
+				<div style="display:none" id="aaaaa">0</div>
+			    <input type="hidden" name="league" id="league" value="" />
+			    <input type="hidden" name="top_f5" id="top_f5" value="0" />
+
+			    <span id="showNull" title="无收藏" class="bet_star_btn_out"><tt class="bet_star_text">0</tt></span>
+			    <span id="showAll" title="所有赛事" onClick="showAllGame();" style="display:none;" class="bet_star_btn_on"><tt id="live_num_all" class="bet_star_text">0</tt></span>
+			    <span id="showMy" title="我收藏赛事" onClick="showMyLove();" style="display:none;" class="bet_star_btn_on"><tt id="live_num" class="bet_star_text">0</tt></span>
+
+
+			    <span id="sel_league" onClick="chg_league('re');" class="bet_league_btn"><tt class="bet_normal_text">选择联赛&nbsp;<tt id="str_num" class="bet_yellow">(全部)</tt></tt></span>
+
+
+			    <div id="show_pg_chk_msg" style="display:none;" class="bet_game_head_i">
+			    	<div class="bet_head_i_bg">
+			    		<span class="bet_head_iarrow_text">如您觉得网页运行缓慢,请选分页，<br>这会限制每页显示的比赛场数。</span>
+			    	</div>
+			    </div>
+			</div>
+
+			<!--右侧按钮-->
+			<div class="bet_right">
+			 	<span id="pg_txt"  class="bet_page_btn" style="display:none;">
+
+			 	</span>
+			 	<span id="sel_sort"  class="bet_sort_btn">
+			     	<tt class="bet_sort_text">排序</tt>
+			        <div id="show_sort" onmouseleave="hideDiv(this.id);" class="bet_sort_bg" style="display:none;">
+			            <span class="bet_arrow"></span>
+			            <span class="bet_arrow_text">赛事排序</span>
+			            <ul id="SortSel">
+			            <li id="sort_time" onClick="chgSortValue('T');" class="bet_sort_time">按时间排序</li>
+			            <li id="sort_leg" onClick="chgSortValue('C');" class="bet_sort_comp">按联盟排序</li>
+			            </ul>
+			        </div>
+			    </span>
+
+
+			 	<span class="bet_time_btn" onClick="javascript:shuaxin(document.getElementById('league').value);"><tt id="refreshTime" class="bet_time_text"></tt></span>
+			</div>
+
+		</div>
+    </div>
+  	<div id="backTOP" style="display:none;" onClick="backtop();" class="bet_top_bg"></div>	
+	<div id=showtable class="showtable_normal">	</div>
+	
+	<div id="showtableData" style="display:none;">
+		<xmp>
+		    <table cellpadding="0" cellspacing="0" border="0" class="bet_game_table">
+				<tr id="title_tr" name="fixhead_copy" class="bet_game_title">
+					<td colspan="2" id="mylovegtype" style="display:none;"class="bet_game_name">足球<br><tt class="bet_game">我的收藏:滚球</tt></td>
+					<td colspan="2" id="mygtype"class="bet_game_name">足球<br><tt class="bet_game">滚球</tt></td>
+					<td class="bet_title_1X2"><span>全场<br><tt>独赢</tt></span></td>
+					<td class="bet_title_hdp"><span>全场<br><tt>让球</tt></span></td>
+					<td class="bet_title_ou"><span>全场<br><tt>大小</tt></span></td>
+					<td class="bet_title_oe"><span>全场<br><tt>单双</tt></span></td>
+					<td class="bet_title_1X2"><span>半场<br><tt>独赢</tt></span></td>
+					<td class="bet_title_dp"><span>半场<br><tt>让球</tt></span></td>
+					<td class="bet_title_hou"><span>半场<br><tt>大小</tt></span></td>
+				</tr>
+
+					*showDataTR*
+			</table>
+
+			<div id="show_page_txt" style="display:none;" class="bet_page_bot"></div>
+
+		</xmp>
+	</div>
+
+
+    <div id=DataTR style="display:none;">
+		<xmp>
+			<!--SHOW LEGUAGE START-->
+			<tr *LegMark* *ST*>
+				<td colspan="9" onClick="showLeg('*LEG*')">*LEG*</td>
+			</tr>
+			<!--SHOW LEGUAGE END-->
+			<tr id="TR_*ID_STR*" *CLASS* *TR_EVENT* *TR_TOP*>
+				<td rowspan="*TR_NUM*" class="bet_game_time"><div class="bet_time_score">*SCORE*</div><div>*DATETIME*</div><div *DISPLAY_MIDFIELD* class="bet_game_n"></div></td>
+				<td class="bet_team" *TR_EVENT*><div class="bet_team_div_ft"><span class="bet_text_tdl">*TEAM_H*&nbsp;</span><span class="bet_text_tdred"><span *REDCARD_H_STYLE* class="bet_red_card">*REDCARD_H*</span></span></div></td>
+				<td class="bet_text">*RATIO_MH*</td>
+				<td class="bet_text"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_thin">*CON_RH*</tt></span><span class="bet_text_tdr">*RATIO_RH*</span></div></td>
+				<td class="bet_text"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_oue">*TEXT_OUH*</tt><tt class="bet_text_thin">*CON_OUH*</tt></span><span class="bet_text_tdr">*RATIO_OUH*</span></div></td>
+				<td class="bet_text"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_oue">*TEXT_EOO*</tt></span><span class="bet_text_tdr">*RATIO_EOO*</span></div></td>
+				<td id="TR_*ID_STR*_text_1"class="bet_text_left_bg">*RATIO_HMH*</td>
+				<td id="TR_*ID_STR*_text_2"class="bet_text_bg"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_thin_bg">*CON_HRH*</tt></span><span class="bet_text_tdr">*RATIO_HRH*</span></div></td>
+				<td id="TR_*ID_STR*_text_3"class="bet_text_right_bg"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_oue">*TEXT_HOUH*</tt><tt  class="bet_text_thin_bg">*CON_HOUH*</tt></span><span class="bet_text_tdr">*RATIO_HOUH*</span></div></td>
+			</tr>
+
+			<tr id="TR1_*ID_STR*" *CLASS* *TR_EVENT*  class="bet_game_tr_other">
+				<td class="bet_team" *TR_EVENT*><div class="bet_team_div_ft"><span class="bet_text_tdl">*TEAM_C*&nbsp;</span><span class="bet_text_tdred"><span *REDCARD_C_STYLE* class="bet_red_card" >*REDCARD_C*</span></span></div></td>
+				<td class="bet_text">*RATIO_MC*</td>
+				<td class="bet_text"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_thin">*CON_RC*</tt></span><span class="bet_text_tdr">*RATIO_RC*</span></div></td>
+				<td class="bet_text"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_oue">*TEXT_OUC*</tt><tt class="bet_text_thin">*CON_OUC*</tt></span><span class="bet_text_tdr">*RATIO_OUC*</span></div></td>
+				<td class="bet_text"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_oue">*TEXT_EOE*</tt></span><span class="bet_text_tdr">*RATIO_EOE*</span></div></td>
+				<td id="TR1_*ID_STR*_text_1"class="bet_text_left_bg">*RATIO_HMC*</td>
+				<td id="TR1_*ID_STR*_text_2"class="bet_text_bg"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_thin_bg">*CON_HRC*</tt></span><span class="bet_text_tdr">*RATIO_HRC*</span></div></td>
+				<td id="TR1_*ID_STR*_text_3"class="bet_text_right_bg"><div class="bet_text_table"><span class="bet_text_tdl"><tt class="bet_text_oue">*TEXT_HOUC*</tt><tt class="bet_text_thin_bg">*CON_HOUC*</tt></span><span class="bet_text_tdr">*RATIO_HOUC*</span></div></td>
+			</tr>
+
+			<tr id="TR2_*ID_STR**NODARW*" *DIS_DARW* *CLASS* *TR_EVENT* class="bet_game_tr_other">
+				<td class="bet_team"><div class="bet_text_table_star"><span class="bet_text_tdl">*DRAW_STR*</span><span class="bet_text_tdstar"><span id="*MYLOVE_ID_none*" *MYLOVE_CSS_none* class="bet_game_star_none"></span><span id="*MYLOVE_ID*" *MYLOVE_CSS*></span></span></div></td>
+				<td class="bet_text">*RATIO_MN*</td>
+				<td colspan="3"><span style='display:none;' class="bet_more_btn">所有玩法&nbsp;&nbsp;<tt>*COUNT_MORE*</tt></span></td>
+	           <!--td colspan="3"><span style='display:*DISPLAY_MORE*' *ONCLICK_MORE* class="bet_more_btn">所有玩法&nbsp;&nbsp;<tt>*COUNT_MORE*</tt></span></td-->
+				<td id="TR2_*ID_STR*_text_1"class="bet_text_left_bg">*RATIO_HMN*</td>
+				<td id="TR2_*ID_STR*_text_2"class="bet_td_bg"></td>
+				<td id="TR2_*ID_STR*_text_3"class="bet_td_bg" ><span title="可以观看在线直播" *TV_CLASS* *TV*</span></td>
+			</tr>
+		</xmp>
+	</div>
+
+			
+    <div id=NoDataTR style="display:none;">		      	
+		<xmp>
+		   <td colspan="20" class="bet_no_game">您选择的项目暂时没有赛事。</td>
+	    </xmp>
+	</div>
+
+</div>
+<div id="legView" style="display:none; width:100%; height:100%;" class="legView">
+    <div class="leg_head" onMousedown="initializedragie('legView')"></div>
+		<div style="width:100%; height:100%;"><iframe id="legFrame" frameborder="no" border="0" allowtransparency="true" scrolling="no" width=100% height=100%></iframe></div>
+		<div class="leg_foot"></div>
+</div>  
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?php $paytype = array();
+$paytype[] = '智付';
+$paytype[] = '环迅';
+$paytype[] = '易宝';
+$paytype[] = '快捷宝';
+$paytype[] = '汇潮';
+$paytype[] = '宝付';
+$paytype[] = '新生';
+$paytype[] = '国付宝';
+$paytype[] = '魔宝';
+$paytype[] = '环迅';
+$paytype[] = '融宝';
+$paytype[] = '币付宝';
+$paytype[] = '易付宝';
+$paytype[] = '盈宝';
+$paytype[] = '新贝';
+$paytype[] = '闪付';?>

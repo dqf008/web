@@ -1,0 +1,12 @@
+//缘聚福来
+$arr_online_config['缘聚福来微信']['online_name'] = '微信扫码';
+$arr_online_config['缘聚福来微信']['pay_mid'] = 'PC00000001S';
+$arr_online_config['缘聚福来微信']['pay_mkey'] = '657f7a2a97a14b88bf613ed4fc9bf6c1';
+$arr_online_config['缘聚福来微信']['pay_url'] = 'http://182.16.12.114/member/'; 
+$arr_online_config['缘聚福来微信']['input_url'] = '/member/pay/dinpay3.1.php';
+$arr_online_config['缘聚福来微信']['post_url'] = '/member/pay/yjfl/pany.php?S_Type=WECHAT';
+$arr_online_config['缘聚福来微信']['notice_url'] = $arr_online_config['缘聚福来微信']['pay_url'] . 'pay/yjfl/notify.php';
+$arr_online_config['缘聚福来微信']['return_url'] = $arr_online_config['缘聚福来微信']['pay_url'] . 'pay/yjfl/success.html';
+//$arr_online_config['缘聚福来微信']['merchant_url'] = 'http://101.37.135.79/weixin/api.do';
+//$arr_online_config['缘聚福来微信']['merchant_url'] = 'http://101.37.135.79/qq/qq.do';
+$arr_online_config['缘聚福来微信']['merchant_url'] = 'http://101.37.135.79/wap/wap.do';

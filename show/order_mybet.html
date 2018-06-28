@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title></title>
+		<link href="/sprots_images/order.css" rel="stylesheet" type="text/css">
+	    <link href="/sprots_images/reset.css" rel="stylesheet" type="text/css">
+		<script src="/sprots_images/util.js"></script>
+		<script language="javascript" src="/skin/js/top.js"></script>
+		<script language="javascript" src="/js/jquery.js"></script>
+		<script language="javascript" src="/js/jquery_dialog.js"></script>
+		<script src="order_mybet.js"></script>
+	</head>
+
+
+	<body onLoad="init();">
+		<div id="ord_main">
+			<div class="ord_DIV">
+				<!--未结算注单-->
+				<div class="ord_unsetDIV">
+					<div id="unord_setTitle" class="ord_setTitle_off noFloat"><!--关起来class="ord_setTitle_off"-->
+						<ul><li>未结算注单</li>
+                        <li class="ord_setTitle_miniTxt">最新10笔交易</li>
+                        </ul>
+						<!--未結算和已結算 不用秀統計量了-->
+						<!--<span id="unord_setNUM" class="ord_setNUM">0</span>-->
+					</div>
+					
+					<!--没单-->
+					<div id="unord_noMyBet" class="ord_noMyBet" style="display:none">您没有未结算注单</div>
+
+					<!--有单-->
+					<div id="unord_setTxT" class="ord_setTxT" style="display:none"></div>
+					<!--单子钮showPage('member/record_ty.php?atype=2');-->
+					<div id="unord_viewG" class="ord_viewG" style="display:none;" onClick="showPage();">
+						<span class="ord_viewBTN">查看过关注单</span>
+					</div>
+					
+				</div>
+
+				<!--已结算注单-->
+				<div class="ord_setDIV">
+					<div id="ord_setTitle" class="ord_setTitle_off noFloat"><!--关起来class="ord_setTitle_off"-->
+						<ul>
+							<li>已结算注单</li>
+							<li class="ord_setTitle_miniTxt">今日</li>
+						</ul>
+						<!--未結算和已結算 不用秀統計量了-->
+						<!--<span id="ord_setNUM" class="ord_setNUM">0</span>-->
+					</div>
+
+					<!--没单-->
+					<div id="ord_noMyBet" class="ord_noMyBet" style="display:none;">您今天没有已结算注单.</div>
+
+					<!--有单-->
+					<div id="ord_setTxT" class="ord_setTxT" style="display:none;"></div>
+
+					<!--单子钮-->
+					<div id="ord_viewG" class="ord_viewG" style="display:none" onClick="showPage('Statement');">
+						<span class="ord_viewBTN">查看所有已结算注单</span>
+					</div>
+				</div>
+
+				<!--弹出遮罩-->
+				<div id="ord_DIV_Mask" class="ord_DIV_Mask" style="display:none" onKeyPress="SumbitCheckKey(event)" tabindex="1"></div>
+
+				<!--样板-->
+				<!--危险球未确认ord_mybet_dangerN 危险球已确认ord_mybet_dangerY 普通状态ord_mybet_nomal 取消单ord_mybet_cancel-->
+				<div id="unsettled_model" style="display:none;">
+					<div class="ord_mybet_*BETSTATE*" onClick="Refresh('*CR*');">
+						<span class="ord_crossBTN" onClick="showMore('*TYPES*','*BETID*');"></span>
+
+						<div class="ord_betSucc_general_List*SP*">
+							<ul class="ord_betArea_wordTop">
+								<li class="BlueWordS">*WTYPE*</li>
+								<li class="dark_BrownWord *SHOWVS*">*HOME*<tt class="RedWord fatWord">*RATIO_H*</tt><tt class="ord_vWord">v</tt>*AWAY*<tt class="RedWord fatWord">*RATIO_A*</tt> <span class="BlueWord RedWord">*ORGSCORE*</span><span class="BlueWordS">*SCORE*</span></li>
+							</ul>
+
+							*BETCONTENT*
+						</div>
+
+						<table cellspacing="0" cellpadding="0" class="ord_betSucc_TB">
+							<tr>
+								<td width="40%">投注额:</td>
+								<td width="60%" class="ord_betSucc_stake Word_Paddright">*STAKE*</td>
+							</tr>
+							<tr>
+								<td>可赢额:</td>
+								<td class="ord_betSucc_stake Word_Paddright">*GOLD*</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="ord_Danger_word">*BETINFO*</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="settled_model" style="display:none;">
+					<div class="ord_mybet_*BETSTATE*">
+						<span class="ord_crossBTN" onClick="showMore('*TYPES*','*BETID*');"></span>
+
+						<div class="ord_betSucc_general_List*SP*">
+							<ul class="ord_betArea_wordTop">
+								<li class="BlueWordS">*WTYPE*</li>
+								<li class="dark_BrownWord *SHOWVS*">*HOME*<tt class="RedWord fatWord">*RATIO_H*</tt><tt class="ord_vWord">v</tt>*AWAY*<tt class="RedWord fatWord">*RATIO_A*</tt> <span class="BlueWord RedWord">*ORGSCORE*</span><span class="BlueWordS">*SCORE*</span></li>
+							</ul>
+
+							*BETCONTENT*
+						</div>
+
+						<table cellspacing="0" cellpadding="0" class="ord_betSucc_TB">
+							<tr>
+								<td width="40%">投注额:</td>
+								<td width="60%" class="ord_betSucc_stake Word_Paddright">*STAKE*</td>
+							</tr>
+							<tr>
+								<td>赢 / 输:</td>
+								<td class="Word_Paddright fatWord *WLCOLORGOLD*">*GOLD*</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="ord_Danger_word *SHOWBETINFO*">*BETINFO*</td>
+							</tr>
+							<tr class="*SHOWRESULT*">
+								<td colspan="2">
+									<ul class="ord_timeEvent noFloat">
+										<li class="*WLCOLOR* ord_timeEventL*SB*">*RESULT*</li>
+										<li class="Word_Paddright ord_timeEventR*SB*">*MS*</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div id="betcontent_model" style="display:none;">
+					<ul class="ord_betArea_wordBottom *ULCANCEL*">
+						<li class="dark_BrownWord *BETICON*">
+							<span class="*ICONCLASS*">*CHOOSE* <tt class="RedWord fatWord">*BETRATIO*</tt> @ <span class="*IORCLASS*">*IORATIO*</span></span>
+						</li>
+					</ul>
+				</div>
+
+				<div id="unsettled_detail_model" style="display:none;">
+					<div class="ord_winlossDIV *SHOWCANCEL*" id = "*MODEL*_detail_model">
+						*ALLDETAIL*
+
+						<table cellspacing="0" cellpadding="0" class="ord_betSucc_TB">
+							<tr>
+								<td width="40%">投注额:</td>
+								<td width="60%" class="ord_betSucc_stake Word_Paddright">*STAKE*</td>
+							</tr>
+							<tr>
+								<td>赢 / 输:</td>
+								<td class="Word_Paddright ord_betSucc_stake">*GOLD*</td>
+							</tr>
+							<tr>
+								<td>下注时间:</td>
+								<td class="dark_BrownWord Word_Paddright">*BETTIME*</td>
+							</tr>
+							<tr class="*NOMALSHOW*">
+								<td>赛事时间:</td>
+								<td class="dark_BrownWord Word_Paddright">*GAMETIME*</td>
+							</tr>
+							<tr>
+								<td>下注单号:</td>
+								<td class="dark_BrownWord Word_Paddright">*BETID*</td>
+							</tr>
+						</table>
+
+						<span class="ord_viewBTN" onClick="closeMore();">关闭</span>
+					</div>
+				</div>
+				<div id="settled_detail_model" style="display:none;">
+					<div class="ord_winlossDIV *SHOWCANCEL*" id = "*MODEL*_detail_model">
+						*ALLDETAIL*
+
+						<table cellspacing="0" cellpadding="0" class="ord_betSucc_TB">
+							<tr>
+								<td width="40%">投注额:</td>
+								<td width="60%" class="ord_betSucc_stake Word_Paddright">*STAKE*</td>
+							</tr>
+							<tr>
+								<td>赢 / 输:</td>
+								<td class="Word_Paddright fatWord *WLCOLORGOLD*">*GOLD*</td>
+							</tr>
+							<tr class="*SHOWBETINFO*">
+								<td colspan="2">
+									<ul class="ord_timeEvent noFloat">
+										<li class="*WLCOLOR* ord_timeEventL*SB*">*BETINFO*</li>
+										<li class="Word_Paddright ord_timeEventR*SB*">*MS*</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>下注时间:</td>
+								<td class="dark_BrownWord Word_Paddright">*BETTIME*</td>
+							</tr>
+							<tr class="*NOMALSHOW*">
+								<td>赛事时间:</td>
+								<td class="dark_BrownWord Word_Paddright">*GAMETIME*</td>
+							</tr>
+							<tr>
+								<td>下注单号:</td>
+								<td class="dark_BrownWord Word_Paddright">*BETID*</td>
+							</tr>
+						</table>
+
+						<span class="ord_viewBTN" onClick="closeMore();">关闭</span>
+					</div>
+				</div>
+
+				<div id="betdetail_model" style="display:none">
+					<div class="ord_winlossG">
+						<ul class="ord_betArea_wordTop">
+							<li class="BlueWordS">*WTYPE*</li>
+							<li class="light_BrownWord upperWord">*LEAGUE*</li>
+							<li class="dark_BrownWord *SHOWVS*">*HOME*<tt class="RedWord fatWord">*RATIO_H*</tt><tt class="ord_vWord">v</tt>*AWAY*<tt class="RedWord fatWord">*RATIO_A*</tt> <span class="BlueWord RedWord">*ORGSCORE*</span><span class="BlueWordS">*SCORE*</span></li>
+						</ul>
+
+						<ul class="ord_betArea_wordBottom">
+							<li class="dark_BrownWord">*CHOOSE* <tt class="RedWord fatWord">*BETRATIO*</tt> @ <tt class="*IORCLASS*">*IORATIO*</tt></li>
+							<li class="*COLOR*">*BETDETAIL*</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="betdetail_model_p" style="display:none">
+					<div class="ord_winlossG *ISCANCEL*">
+						<ul class="ord_betArea_wordTop">
+							<li class="BlueWordS">*WTYPE*</li>
+							<li class="light_BrownWord upperWord">*LEAGUE*</li>
+							<li class="dark_BrownWord">*HOME*<tt class="RedWord fatWord">*RATIO_H*</tt><tt class="ord_vWord">v</tt>*AWAY*<tt class="RedWord fatWord">*RATIO_A*</tt> <span class="BlueWord RedWord">*ORGSCORE*</span><span class="BlueWordS">*SCORE*</span></li>
+							<li class="dark_BrownWord">*CHOOSE* <tt class="RedWord fatWord">*BETRATIO*</tt> @ <tt class="RedWord fatWord">*IORATIO*</tt></li>
+
+							<ul class="ord_timeEvent noFloat *IT*">
+								<li class="ord_timeEventL*SB* *COLOR*">*BETDETAIL*</li>
+								<li class="ord_timeEventR*SB*">*MS*</li>
+							</ul>
+
+							<li class="GrayWord">赛事时间: <tt class="dark_BrownWord">*GAMETIME*</tt></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

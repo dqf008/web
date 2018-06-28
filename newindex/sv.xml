@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Advertis>
+    <conf>
+         <pageWidth>15</pageWidth>
+         <pageX>860</pageX>
+         <pageY>328</pageY>
+         <pageMax>10</pageMax>
+         <viewWidth>1000</viewWidth>
+         <viewHeight>348</viewHeight>
+    </conf>
+    <image>
+        <img path="../newindex/135770442654.jpg" speed="5" url="myhot.php" target="index"></img>
+        <img path="../newindex/136619440090.jpg" speed="5" url="myhot.php" target="index"></img>
+        <img path="../newindex/135770449871.jpg" speed="5" url="myhot.php" target="index"></img>
+        <img path="../newindex/135770451855.jpg" speed="5" url="myhot.php" target="index"></img>
+        <img path="../newindex/135770453983.jpg" speed="5" url="myhot.php" target="index"></img>
+        <img path="../newindex/135800491987.jpg" speed="5" url="myhot.php" target="index"></img>
+    </image>
+</Advertis>

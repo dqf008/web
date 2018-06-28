@@ -1,0 +1,18 @@
+--------------------------------start--------------------------------
+17-11-09 05:55:22接收到的数据:merchno=211530354110068&remark=2%7C%7C%B3%A4%B3%C7%B8%B6%CE%A2%D0%C5&status=1&traceno=151022114367999&orderno=10000024334371&merchName=CC00420A&channelOrderno=&amount=0.01&transDate=2017-11-09&channelTraceno=&transTime=17%3A52%3A23&payType=2&signature=09F05ADDEC0528A90A3DB1719DD33F9B&openId=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DHmmG00b
+17-11-09 05:55:22加密完成的字段:09F05ADDEC0528A90A3DB1719DD33F9B
+17-11-09 05:55:22返回的数据:success
+----------------------------------end--------------------------------
+--------------------------------start--------------------------------
+17-11-09 05:56:37接收到的数据:merchno=211530354110068&remark=2%7C%7C%B3%A4%B3%C7%B8%B6%CE%A2%D0%C5&status=1&traceno=151022114367999&orderno=10000024334371&merchName=CC00420A&channelOrderno=&amount=0.01&transDate=2017-11-09&channelTraceno=&transTime=17%3A52%3A23&payType=2&signature=09F05ADDEC0528A90A3DB1719DD33F9B&openId=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DHmmG00b
+17-11-09 05:56:37加密完成的字段:09F05ADDEC0528A90A3DB1719DD33F9B
+----------------------------------end--------------------------------
+--------------------------------start--------------------------------
+17-11-09 05:56:46接收到的数据:merchno=211530354110068&remark=2%7C%7C%B3%A4%B3%C7%B8%B6%CE%A2%D0%C5&status=1&traceno=151022114367999&orderno=10000024334371&merchName=CC00420A&channelOrderno=&amount=0.01&transDate=2017-11-09&channelTraceno=&transTime=17%3A52%3A23&payType=2&signature=09F05ADDEC0528A90A3DB1719DD33F9B&openId=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DHmmG00b
+17-11-09 05:56:46加密完成的字段:09F05ADDEC0528A90A3DB1719DD33F9B
+----------------------------------end--------------------------------
+--------------------------------start--------------------------------
+17-11-09 06:03:15接收到的数据:
+17-11-09 06:03:15加密完成的字段:6FBEB923B08117369C150581D5B19DAA
+17-11-09 06:03:15返回的数据:fail
+----------------------------------end--------------------------------

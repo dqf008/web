@@ -1,0 +1,1 @@
+{"bet_count":2185,"jr_bet_count":2,"hyzs":444,"jrhy":0,"new_member_uids":null,"tixian_today":0,"cunkuan_today":0,"huikuan_today":0,"hk_count":0,"today_hk_member_uids":null,"cz_count":0,"today_cz_member_uids":null,"today_tx_member_uids":null,"tx_count":0,"new_cz_member_count":0,"uid_str":""}
